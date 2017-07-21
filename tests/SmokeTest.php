@@ -8,7 +8,6 @@ class SmokeTest extends \PHPUnit_Framework_TestCase {
 
 	private static $PAGE_PATH;
 
-
 	public static function setUpBeforeClass() {
 		self::$PAGE_PATH = __DIR__ . '/../output_test/';
 		exec( 'vendor/bin/sculpin generate --env=test' );
