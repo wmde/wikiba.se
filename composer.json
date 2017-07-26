@@ -1,5 +1,6 @@
 {
 	"require": {
+		"components/font-awesome": "~4.7",
 		"sculpin/sculpin": "~2.1",
 		"worldskills/bootstrap": "~3.2",
 		"dflydev/embedded-composer": "^1.0@dev"
