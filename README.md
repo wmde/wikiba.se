@@ -15,7 +15,7 @@ Run the install command:
 For development:
 
     vendor/bin/sculpin generate --watch --server
-    
+
 For deployment:
 
     vendor/bin/sculpin generate --env=prod
