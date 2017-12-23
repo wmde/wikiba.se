@@ -20,6 +20,10 @@ For deployment:
 
     vendor/bin/sculpin generate --env=prod
 
+You can also run sculpin in a docker container:
+
+    docker run --rm -it -p 8000:8000 -v "/$PWD://app" php:latest sh -c "cd //app; vendor/bin/sculpin help"
+
 ## Running the tests
 
 Change into the root directory of the project and run
