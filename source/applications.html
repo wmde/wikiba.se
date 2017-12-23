@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Wikibase Applications
+title: Applications
 nav_name: applications
 
 ---
@@ -158,3 +158,34 @@ nav_name: applications
         </div>
     </div>
 </div>
+
+<h2 id="components">Application Components</h2>
+
+<h3 id="wikibase">Wikibase PHP libraries</h3>
+
+<p>These libraries deal with the Wikibase domain and form the core of the Wikibase software.</p>
+
+{% include "libraries/tables/wikibase.html" %}
+
+<h3 id="data-values">DataValues PHP libraries</h3>
+
+<p>
+    These libraries define the most basic values that make up the Wikibase DataModel. While they are
+    a critical part of the Wikibase software, they are independent of the Wikibase domain and can be
+    used in other contexts. They are primarily developed for, and used by, the Wikibase software.
+</p>
+
+{% include "libraries/tables/data-values.html" %}
+
+<h3 id="php">Associated PHP libraries</h3>
+
+<p>
+    These are infrastructure libraries that have been created for, and are currently used by, the
+    Wikibase software.
+</p>
+
+{% include "libraries/tables/associated.html" %}
+
+<h3 id="js">JavaScript libraries</h3>
+
+{% include "libraries/tables/javascript.html" %}

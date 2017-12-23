@@ -13,7 +13,7 @@ nav_name: resources
 ## Developer resources
 
 For documentation and infrastructure of specific [applications]({{site.url}}/applications)
-or [components]({{site.url}}/components), see their dedicated pages.
+or [components]({{site.url}}/applications#components), see their dedicated page.
 
 * [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
 * [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
@@ -31,7 +31,7 @@ anyone can edit. Its data is used by Wikipedia, its sister projects and anyone e
 
 ### Where can I find the source code?
 
-Wikibase consists of several components. You can find an overview on the [components page]({{site.url}}/components).
+Wikibase consists of several components. You can find an overview on the [components page]({{site.url}}/applications#components).
 
 ## Contact
 

@@ -20,10 +20,10 @@ class SmokeTest extends \PHPUnit_Framework_TestCase {
 		);
 	}
 
-	public function testComponentsPageContainsComponents() {
+	public function testLibrariesPageContainsLibraries() {
 		$this->assertPageContains(
-			'Components',
-			'components/index.html'
+			'Libraries',
+			'libraries/index.html'
 		);
 	}
 
