@@ -19,26 +19,3 @@ or [components]({{site.url}}/applications#components), see their dedicated page.
 * [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
 * [Wikibase PHP API documentation](https://doc.wikimedia.org/Wikibase/master/php/)
 * [Wikibase JavaScript API documentation](https://doc.wikimedia.org/Wikibase/master/js/)
-
-
-## FAQ
-
-### What is the difference between Wikibase and Wikidata?
-
-Wikibase is the name of the software that was originally written for, and is used by, the
-[Wikidata project](https://www.wikidata.org/). Wikidata is the free knowledge base that
-anyone can edit. Its data is used by Wikipedia, its sister projects and anyone else who wants to make use of a large amount of open general-purpose data.
-
-### Where can I find the source code?
-
-Wikibase consists of several components. You can find an overview on the [components page]({{site.url}}/applications#components).
-
-## Contact
-
-You can file issues, ask questions and propose changes on the issue trackers of the individual
-components. It's also possible to ask for support via the Wikidata project:
-
-- [Mailing Lists](https://www.mediawiki.org/wiki/Wikibase/Support#Mailing_Lists)
-- [Twitter](https://twitter.com/wikidata)
-- [#wikidata on irc.freenode.net](irc://irc.freenode.net/wikidata) <sup>[connect](http://webchat.freenode.net/?channels=#wikidata)</sup>
-- [Contact the development team](https://www.wikidata.org/wiki/Wikidata:Contact_the_development_team)
