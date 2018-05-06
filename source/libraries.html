@@ -4,10 +4,42 @@ title: Libraries
 nav_name: libraries
 ---
 
-<h2 id="wikibase">Wikibase application libraries</h2>
+<h1 id="wikibase">Wikibase libraries</h1>
 
-<p>Some libraries make up a part of Wikibase.</p>
-<p>These can be found on the application page under the <a href="{{ site.url }}/applications#components">reusable components section</a>.</p>
+<p>This page contains libraries that make up part of Wikibase itself, libraries for interacting with Wikibase and other community libraries and tools.</p>
+
+<h2 id="components">Wikibase Components</h2>
+
+<p>These libraries make up a part of the Wikibase MediaWiki extension.</p>
+
+<h3 id="wikibase">Wikibase PHP libraries</h3>
+
+<p>These libraries deal with the Wikibase domain and form the core of the Wikibase software.</p>
+
+{% include "libraries/tables/wikibase.html" %}
+
+<h3 id="data-values">DataValues PHP libraries</h3>
+
+<p>
+    These libraries define the most basic values that make up the Wikibase DataModel. While they are
+    a critical part of the Wikibase software, they are independent of the Wikibase domain and can be
+    used in other contexts. They are primarily developed for, and used by, the Wikibase software.
+</p>
+
+{% include "libraries/tables/data-values.html" %}
+
+<h3 id="php">Associated PHP libraries</h3>
+
+<p>
+    These are infrastructure libraries that have been created for, and are currently used by, the
+    Wikibase software.
+</p>
+
+{% include "libraries/tables/associated.html" %}
+
+<h3 id="js">JavaScript libraries</h3>
+
+{% include "libraries/tables/javascript.html" %}
 
 <h2 id="community">Community libraries</h2>
 

@@ -69,19 +69,8 @@ nav_name: applications
         </div>
     </div>
 </div>
-<hr>
 <p>On top of that, MediaWiki adds:</p>
 <div class="row features">
-    <div class="col-md-6">
-        <div class="feature">
-            <picture class="feature-icon">
-                <i class="fa fa-history"></i>
-            </picture>
-            <div class="feature-text">
-                Full histories of all previous versions of the knowledge base
-            </div>
-        </div>
-    </div>
     <div class="col-md-6">
         <div class="feature">
             <picture class="feature-icon">
@@ -89,6 +78,16 @@ nav_name: applications
             </picture>
             <div class="feature-text">
                 World-class internationalization and localization into more than 200 languages
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="feature">
+            <picture class="feature-icon">
+                <i class="fa fa-history"></i>
+            </picture>
+            <div class="feature-text">
+                Full histories of all previous versions of the knowledge base
             </div>
         </div>
     </div>
@@ -115,6 +114,37 @@ nav_name: applications
         </div>
     </div>
 </div>
+<p>And extensions:</p>
+<div class="row features">
+    <div class="col-md-6">
+        <div class="feature">
+            <picture class="feature-icon">
+                <i class="fa fa-tasks"></i>
+            </picture>
+            <div class="feature-text">
+                PropertySuggester - Provides suggested Properties when a user tries to add new Statements to an Item.
+            </div>
+            <a href="https://www.mediawiki.org/wiki/Extension:PropertySuggester">Documentation</a>
+            | <a href="https://github.com/wikimedia/mediawiki-extensions-PropertySuggester">Source (github)</a>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="feature">
+            <picture class="feature-icon">
+                <i class="fa fa-thermometer-full"></i>
+            </picture>
+            <div class="feature-text">
+                WikibaseQuality - Three extensions to aid with data quality and checks.
+            </div>
+            <a href="https://www.mediawiki.org/wiki/Extension:WikibaseQuality">Documentation</a>
+            | <a href="https://github.com/wikimedia/mediawiki-extensions-WikibaseQuality">Core (github)</a>
+            | <a href="https://github.com/wikimedia/mediawiki-extensions-WikibaseQualityConstraints">Constraints (github)</a>
+
+        </div>
+    </div>
+</div>
+
+<hr>
 
 <h2 id="client">Wikibase Client</h2>
 
@@ -158,34 +188,29 @@ nav_name: applications
         </div>
     </div>
 </div>
+<p>And extensions:</p>
+<div class="row features">
+    <div class="col-md-6">
+        <div class="feature">
+            <picture class="feature-icon">
+                <i class="fa fa-id-card-o"></i>
+            </picture>
+            <div class="feature-text">
+                ArticlePlaceholder - Provides a special page with information about a certain item inviting users to create an article.
+            </div>
+            <a href="https://www.mediawiki.org/wiki/Extension:ArticlePlaceholder">Documentation</a>
+            | <a href="https://github.com/wikimedia/mediawiki-extensions-ArticlePlaceholder">Source (github)</a>
+        </div>
+    </div>
+</div>
 
-<h2 id="components">Application Components</h2>
+<hr>
 
-<h3 id="wikibase">Wikibase PHP libraries</h3>
+<h2 id="query-service">Query Service</h2>
 
-<p>These libraries deal with the Wikibase domain and form the core of the Wikibase software.</p>
+<p>The Query Service is based on BlazeGraph and allows you to query the contents of a Wikibase installation using <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a>.</p>
 
-{% include "libraries/tables/wikibase.html" %}
-
-<h3 id="data-values">DataValues PHP libraries</h3>
-
-<p>
-    These libraries define the most basic values that make up the Wikibase DataModel. While they are
-    a critical part of the Wikibase software, they are independent of the Wikibase domain and can be
-    used in other contexts. They are primarily developed for, and used by, the Wikibase software.
-</p>
-
-{% include "libraries/tables/data-values.html" %}
-
-<h3 id="php">Associated PHP libraries</h3>
-
-<p>
-    These are infrastructure libraries that have been created for, and are currently used by, the
-    Wikibase software.
-</p>
-
-{% include "libraries/tables/associated.html" %}
-
-<h3 id="js">JavaScript libraries</h3>
-
-{% include "libraries/tables/javascript.html" %}
+<ul>
+    <li><a href="https://query.wikidata.org" >Wikidata Query Service</a></li>
+    <li><a href="https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help" >Wikidata Query Service Help Portal</a></li>
+</ul>
