@@ -17,3 +17,9 @@ anyone can edit. Its data is used by Wikipedia, its sister projects and anyone e
 Wikibase consists of several components.
 
 You can find an overview on the [applications page]({{site.url}}/applications).
+
+### How can I easily set up my own Wikibase instance?
+
+You can use our docker containers which are available on [docker hub](https://hub.docker.com/r/wikibase/).
+
+You can read the documentation on how to use these in the [wikibase-containers repository](https://github.com/wmde/wikibase-docker).

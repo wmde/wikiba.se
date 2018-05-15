@@ -9,6 +9,7 @@ nav_name: resources
 * [Data Model Primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
 * [API documentation](https://www.mediawiki.org/wiki/Wikibase/API)
 * [Presentation: Wikibase](http://bit.ly/wikibase-smwcon)
+* [Docker Images](https://hub.docker.com/r/wikibase/)
 
 ## Developer resources
 
