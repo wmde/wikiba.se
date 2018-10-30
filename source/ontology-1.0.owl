@@ -1,4 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+///////////////////////////////////////////////////////////////////////////////////////
+//
+// Sources:
+// https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/extensions/Wikibase/+/refs/heads/master/docs/ontology.owl
+// https://gerrit.wikimedia.org/r/plugins/gitiles/mediawiki/extensions/WikibaseLexeme/+/refs/heads/master/docs/ontology.owl
+///////////////////////////////////////////////////////////////////////////////////////
+-->
 
 <!DOCTYPE rdf:RDF [
   <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
@@ -19,6 +27,7 @@
     <rdfs:label>Wikibase system ontology</rdfs:label>
     <rdfs:comment>The system ontology of Wikibase</rdfs:comment>
     <rdfs:seeAlso rdf:resource="https://www.mediawiki.org/wiki/Wikibase/Indexing/RDF_Dump_Format" />
+    <rdfs:seeAlso rdf:resource="https://www.mediawiki.org/wiki/Extension:WikibaseLexeme/RDF_mapping" />
   </owl:Ontology>
 
   <!--
@@ -418,5 +427,46 @@
       <rdfs:domain rdf:resource="&wikibase;Statement"/>
       <rdfs:range rdf:resource="&wikibase;Statement"/>
   </owl:ObjectProperty>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // Wikibase Lexeme classes and properties
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+  -->
+
+  <owl:Class rdf:about="&wikibase;Lexeme">
+    <rdfs:label>Lexeme</rdfs:label>
+    <rdfs:comment>Wikibase Lexeme.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="&wikibase;Entity"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&wikibase;Form">
+      <rdfs:label>Form</rdfs:label>
+      <rdfs:comment>Wikibase Form.</rdfs:comment>
+      <rdfs:subClassOf rdf:resource="&wikibase;Entity"/>
+  </owl:Class>
+
+  <owl:ObjectProperty rdf:about="&wikibase;lexicalCategory">
+      <rdfs:label>lexicalCategory</rdfs:label>
+      <rdfs:comment>Lexeme lexical category.</rdfs:comment>
+      <rdfs:domain rdf:resource="&wikibase;Lexeme"/>
+      <rdfs:range rdf:resource="&wikibase;Item"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="&wikibase;grammaticalFeature">
+      <rdfs:label>grammaticalFeature</rdfs:label>
+      <rdfs:comment>Form grammatical feature.</rdfs:comment>
+      <rdfs:domain rdf:resource="&wikibase;Form"/>
+      <rdfs:range rdf:resource="&wikibase;Item"/>
+  </owl:ObjectProperty>
+
+  <owl:DatatypeProperty rdf:about="&wikibase;lemma">
+      <rdfs:label>lemma</rdfs:label>
+      <rdfs:comment>Lexeme lemma.</rdfs:comment>
+      <rdfs:domain rdf:resource="&wikibase;Lexeme"/>
+      <rdfs:range rdf:resource="&rdf;langString"/>
+  </owl:DatatypeProperty>
 
 </rdf:RDF>
