@@ -49,14 +49,12 @@
   </owl:Class>
 
   <owl:Class rdf:about="&wikibase;Item">
-    <owl:disjointWith rdf:resource="&wikibase;Property"/>
     <rdfs:label>Item</rdfs:label>
     <rdfs:comment>Wikibase item.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&wikibase;Entity"/>
   </owl:Class>
 
   <owl:Class rdf:about="&wikibase;Property">
-    <owl:disjointWith rdf:resource="&wikibase;Item"/>
     <rdfs:label>Property</rdfs:label>
     <rdfs:comment>Wikibase property.</rdfs:comment>
     <rdfs:subClassOf rdf:resource="&wikibase;Entity"/>
@@ -468,5 +466,23 @@
       <rdfs:domain rdf:resource="&wikibase;Lexeme"/>
       <rdfs:range rdf:resource="&rdf;langString"/>
   </owl:DatatypeProperty>
+
+  <!--
+  ///////////////////////////////////////////////////////////////////////////////////////
+  //
+  // General axioms
+  //
+  ///////////////////////////////////////////////////////////////////////////////////////
+   -->
+
+  <rdf:Description>
+    <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+    <owl:members rdf:parseType="Collection">
+      <rdf:Description rdf:about="&wikibase;Form"/>
+      <rdf:Description rdf:about="&wikibase;Item"/>
+      <rdf:Description rdf:about="&wikibase;Lexeme"/>
+      <rdf:Description rdf:about="&wikibase;Property"/>
+    </owl:members>
+  </rdf:Description>
 
 </rdf:RDF>
