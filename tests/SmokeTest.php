@@ -42,7 +42,7 @@ class SmokeTest extends TestCase {
 
 		$page = file_get_contents( self::$PAGE_PATH . $fileName );
 
-		$this->assertContains(
+		$this->assertStringContainsString(
 			$expected,
 			$page
 		);
