@@ -1,10 +1,12 @@
 <?php
 
+use PHPUnit\Framework\TestCase;
+
 /**
  * @licence GNU GPL v2+
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
-class SmokeTest extends \PHPUnit_Framework_TestCase {
+class SmokeTest extends TestCase {
 
 	private static $PAGE_PATH;
 
