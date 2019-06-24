@@ -10,7 +10,7 @@ class SmokeTest extends TestCase {
 
 	private static $PAGE_PATH;
 
-	public static function setUpBeforeClass() {
+	public static function setUpBeforeClass() : void {
 		self::$PAGE_PATH = __DIR__ . '/../output_test/';
 		exec( 'vendor/bin/sculpin generate --env=test' );
 	}
