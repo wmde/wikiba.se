@@ -1,8 +1,8 @@
 # Wikiba.se website
 
-This repo contains the resources of the [wikiba.se website](http://wikiba.se).
+This repo contains the resources of the [wikiba.se website](https://wikiba.se).
 
-[![Build Status](https://travis-ci.org/wmde/Wikiba.se.svg?branch=master)](https://travis-ci.org/wmde/Wikiba.se)
+[![Build Status](https://travis-ci.org/wmde/wikiba.se.svg?branch=master)](https://travis-ci.org/wmde/wikiba.se)
 
 ## Installation
 
