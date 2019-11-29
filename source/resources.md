@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Resources
-nav_name: resources
+title: Resources-old
+nav_name: resources-old
 ---
 
 ## Resources
