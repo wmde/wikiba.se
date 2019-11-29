@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Docker quick start
-nav_name: docker
+nav_name: install
 
 ---
 # Quick start with Docker
