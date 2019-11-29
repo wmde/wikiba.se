@@ -17,8 +17,14 @@
 					<img class="logo" src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
 				</a>
 			</li>
-            <li {% if page.nav_name == 'Overview' %}class="active"{% endif %}>
+            <li {% if page.nav_name == 'overview' %}class="active"{% endif %}>
                 <a href="{{ site.url }}/overview">Overview</a>
+            </li>
+            <li {% if page.nav_name == 'projects' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/projects">Projects</a>
+            </li>
+            <li {% if page.nav_name == 'resources' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/resources">Resources</a>
             </li>
             <li {% if page.nav_name == 'faq' %}class="active"{% endif %}>
                 <a href="{{ site.url }}/faq">FAQ</a>
