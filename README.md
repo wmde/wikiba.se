@@ -6,7 +6,7 @@ This repo contains the resources of the [wikiba.se website](https://wikiba.se).
 
 ## Installation
 
-Run the install command:
+Assuming you have the php-xml extension installed in your system, run the install command:
 
     composer install
 
