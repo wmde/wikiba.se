@@ -17,7 +17,7 @@ class SmokeTest extends TestCase {
 
 	public function testMainPageContainsIntroText() {
 		$this->assertPageContains(
-			'Wikibase is a collection of applications and libraries for creating',
+			'Wikibase is a robust suite of open-source collaborative software',
 			'index.html'
 		);
 	}
