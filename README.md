@@ -15,17 +15,17 @@ This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 >>>>>>> parent of 3422476... spruced up install instructions just a bit
 ## Installation
 
-Assuming you have the php-xml extension installed in your system, run the install command:
+Run the install command:
 
     composer install
 
 ## Site generation
 
-For development:
+For development and testing:
 
     vendor/bin/sculpin generate --watch --server
 
-For deployment:
+For deployment to production:
 
     vendor/bin/sculpin generate --env=prod
 
