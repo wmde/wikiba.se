@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":267:{a:2:{s:7:"defects";a:1:{s:40:"SmokeTest::testMainPageContainsIntroText";i:3;}s:5:"times";a:3:{s:40:"SmokeTest::testMainPageContainsIntroText";d:0.024;s:45:"SmokeTest::testLibrariesPageContainsLibraries";d:0.001;s:42:"SmokeTest::testBootstrapCssIsWhereExpected";d:0;}}}
