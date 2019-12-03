@@ -4,7 +4,6 @@ This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 
 [![Build Status](https://travis-ci.org/wmde/Wikiba.se.svg?branch=master)](https://travis-ci.org/wmde/Wikiba.se)
 
-<<<<<<< HEAD
 ## Prerequisites
 
 - [PHP](https://www.php.net/manual/en/install.php) with the [php-xml](https://stackoverflow.com/questions/38793676/php-xml-extension-not-installed) extension installed
@@ -12,7 +11,7 @@ This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 - [Composer](https://getcomposer.org/doc/00-intro.md)
 
 =======
->>>>>>> parent of 3422476... spruced up install instructions just a bit
+
 ## Installation
 
 Run the install command:
