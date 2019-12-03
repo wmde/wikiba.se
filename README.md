@@ -4,29 +4,32 @@ This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 
 [![Build Status](https://travis-ci.org/wmde/Wikiba.se.svg?branch=master)](https://travis-ci.org/wmde/Wikiba.se)
 
+<<<<<<< HEAD
 ## Prerequisites
 
 - [PHP](https://www.php.net/manual/en/install.php) with the [php-xml](https://stackoverflow.com/questions/38793676/php-xml-extension-not-installed) extension installed
+- [phpunit](https://phpunit.de/getting-started/phpunit-8.html) (for testing)
 - [Composer](https://getcomposer.org/doc/00-intro.md)
 
+=======
+>>>>>>> parent of 3422476... spruced up install instructions just a bit
 ## Installation
-Run the install command:
+
+Assuming you have the php-xml extension installed in your system, run the install command:
 
     composer install
 
-This will install all dependencies, including [Sculpin](https://sculpin.io/).
-
 ## Site generation
 
-For development and testing:
+For development:
 
     vendor/bin/sculpin generate --watch --server
 
-For deployment to produiction:
+For deployment:
 
     vendor/bin/sculpin generate --env=prod
 
-You can also run sculpin in a docker container:
+You can also run Sculpin in a docker container:
 
     docker run --rm -it -p 8000:8000 -v "/$PWD://app" php:latest sh -c "cd //app; vendor/bin/sculpin help"
 
