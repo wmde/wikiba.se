@@ -10,8 +10,6 @@ This repo contains the resources of the [wikiba.se website](http://wikiba.se).
 - [phpunit](https://phpunit.de/getting-started/phpunit-8.html) (for testing)
 - [Composer](https://getcomposer.org/doc/00-intro.md)
 
-=======
-
 ## Installation
 
 Run the install command:
