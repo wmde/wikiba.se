@@ -8,7 +8,7 @@ nav_name: faq
 
 ### What is the difference between Wikibase and Wikidata?
 
-**[Wikibase](https://wikiba.se)** is the suite of knowledge base software for managing linked open data, originally written for and still used by the Wikidata project. 
+**[Wikibase](https://wikiba.se)** is a suite of knowledge-base software for managing linked open data, originally written for and still used by the Wikidata project. 
 
 **[Wikidata](https://www.wikidata.org)** is the largest instance of Wikibase, a free knowledge base that anyone can edit. Its data is used by Wikipedia, by its sister projects and by anyone else who wants to make use of a large amount of open general-purpose data.
 
