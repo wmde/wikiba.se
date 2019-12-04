@@ -26,7 +26,7 @@ You're welcome to raise an issue on our [phabricator instance](https://phabricat
 Before you do, you may want to review the [bug report guidelines](https://www.mediawiki.org/wiki/How_to_report_a_bug).
 
 ### Is there a list of Wikibase instances?
-On our [User base]({{site.url}}/userbase) page we highlight several notable instances, but for more comprehensive information you can check out the [voluntary Wikibase registry](http://wikibase-registry.wmflabs.org/wiki/Main_Page), the list of [federated query endpoints](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/SPARQL_Federation_endpoints) and the [user group](https://meta.wikimedia.org/wiki/Wikibase_Community_User_Group/Reports/2018). 
+There's not a single canonical list -- on our [User base]({{site.url}}/userbase) page we highlight several notable instances, but for more comprehensive information you can check out the [voluntary Wikibase registry](http://wikibase-registry.wmflabs.org/wiki/Main_Page), the list of [federated query endpoints](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/SPARQL_Federation_endpoints) and the [user group](https://meta.wikimedia.org/wiki/Wikibase_Community_User_Group/Reports/2018). 
 
 
 ### Where can I find more info about the query service?
