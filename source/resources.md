@@ -1,22 +1,39 @@
----
+--
 layout: default
-title: Resources-old
-nav_name: resources-old
+title: Resources
+nav_name: resources
 ---
 
 ## Resources
 
-* [Data Model Primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
-* [API documentation](https://www.mediawiki.org/wiki/Wikibase/API)
-* [Presentation: Wikibase](http://bit.ly/wikibase-smwcon)
-* [Docker Images](https://hub.docker.com/r/wikibase/)
 
-## Developer resources
+### Learn about Wikibase
 
-For documentation and infrastructure of specific [applications]({{site.url}}/applications)
-or [components]({{site.url}}/applications#components), see their dedicated page.
 
-* [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
-* [Coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
-* [Wikibase PHP API documentation](https://doc.wikimedia.org/Wikibase/master/php/)
-* [Wikibase JavaScript API documentation](https://doc.wikimedia.org/Wikibase/master/js/)
+* On the wikimedia blog: [Lingue Libre](https://wikimediafoundation.org/news/2018/12/14/many-faces-of-wikibase-lingua-libre-makes-%cb%88laengw%c9%99%ca%a4%c9%99z-audible/), [Rhizome](https://wikimediafoundation.org/news/2018/09/06/rhizome-wikibase/) and [Factgrid](https://wikimediafoundation.org/news/2018/08/30/wikibase-illuminati-history/)
+
+### For developers
+
+- [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
+- [PHP API documentation](https://doc.wikimedia.org/Wikibase/master/php/)
+- [JavaScript API documentation](https://doc.wikimedia.org/Wikibase/master/js/)
+- Learn about being a Wikimedia [developer](https://www.mediawiki.org/wiki/Developer_account)
+  - Review the [coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)
+  - See the [code of conduct](https://www.mediawiki.org/wiki/Code_of_Conduct)
+- [Data model primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
+- [Docker Images](https://hub.docker.com/r/wikibase/)
+
+### Software
+
+- The [Wikibase repository](https://www.mediawiki.org/wiki/Extension:Wikibase_Repository) ([source](https://phabricator.wikimedia.org/diffusion/EWBA/))
+- The [Wikibase client](https://www.mediawiki.org/wiki/Extension:Wikibase_Client)
+- Three [quality-ensuring Wikibase extensions](https://www.mediawiki.org/wiki/Extension:Wikibase_Quality_Extensions)
+-  [PropertySuggester](https://www.mediawiki.org/wiki/Extension:PropertySuggester): Provides a list of suggestions when adding items.
+
+### Misc
+
+Adam Shorland's [blog posts on the topic of Wikibase](https://addshore.com/tag/wikibase/)
+
+
+**Note:** Do we want [to show commits for review](https://gerrit.wikimedia.org/r/#/projects/mediawiki/extensions/Wikibase,dashboards/default:open)? What about [CI status](https://travis-ci.org/wikimedia/mediawiki-extensions-Wikibase)?
+
