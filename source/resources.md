@@ -1,4 +1,4 @@
---
+---
 layout: default
 title: Resources
 nav_name: resources
@@ -6,9 +6,7 @@ nav_name: resources
 
 ## Resources
 
-
 ### Learn about Wikibase
-
 
 * On the wikimedia blog: [Lingua Libre](https://wikimediafoundation.org/news/2018/12/14/many-faces-of-wikibase-lingua-libre-makes-%cb%88laengw%c9%99%ca%a4%c9%99z-audible/), [Rhizome](https://wikimediafoundation.org/news/2018/09/06/rhizome-wikibase/) and [Factgrid](https://wikimediafoundation.org/news/2018/08/30/wikibase-illuminati-history/)
 
@@ -21,6 +19,7 @@ nav_name: resources
 - [PHP API documentation](https://doc.wikimedia.org/Wikibase/master/php/)
 - [JavaScript API documentation](https://doc.wikimedia.org/Wikibase/master/js/)
 - [Data model primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
+- Wikibase's [libraries]({{site.url}}/libraries)
 - [Docker Images](https://hub.docker.com/r/wikibase/)
 
 ### Software
