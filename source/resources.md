@@ -20,7 +20,7 @@ nav_name: resources
 - [JavaScript API documentation](https://doc.wikimedia.org/Wikibase/master/js/)
 - [Data model primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
 - Wikibase's [libraries]({{site.url}}/libraries)
-- [Docker Images](https://hub.docker.com/r/wikibase/)
+- [Docker images](https://hub.docker.com/r/wikibase/)
 
 ### Software
 
