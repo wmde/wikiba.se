@@ -4,13 +4,13 @@ title: Docker quick start
 nav_name: install
 
 ---
-# Quick start with Docker
+## Quick start with Docker
 
-## Introduction
+### Introduction
 
 We’ve put together a set of machines in Docker that should have you up and running in no time. This configuration starts an empty instance of Wikibase, a MediaWiki front end with query interface, a query backend, ElasticSearch, and a QuickStatements bulk editing service.
 
-## Before you start
+### Before you start
 
 - You’ll need to have [docker](https://docs.docker.com/get-started/) and [docker-compose](https://docs.docker.com/compose/install/) installed on the computer where you want to run your Wikibase instance. 
 - Together, these Docker machines require at least 4GB of memory. 
@@ -18,7 +18,7 @@ We’ve put together a set of machines in Docker that should have you up and run
 
 - An empty Wikibase running on Docker requires at minimum 6GB of disk storage.  
 
-## Getting the machine images running
+### Getting the machine images running
 
 1. Download the [docker-compose file](https://raw.githubusercontent.com/wmde/wikibase-docker/master/docker-compose.yml) and place it on the computer where Docker Engine and docker-compose are installed. 
 2. In the directory that now contains the `docker-compose.yml` file, run the following to pull the needed Docker machine images:
@@ -39,7 +39,7 @@ We’ve put together a set of machines in Docker that should have you up and run
 
     3. Try to load the front end and the query interface in your browser (see below). 
 
-## Using your new instance
+### Using your new instance
 
 Once all the services have started, you can begin to explore your empty instance of Wikibase.
 
@@ -50,9 +50,9 @@ Once all the services have started, you can begin to explore your empty instance
 
   
 
-## Maintenance
+### Maintenance
  
-### Stop the containers
+#### Stop the containers
 
 This command stops the Docker containers, leaving the machines (and of course all data) intact:
 
@@ -60,13 +60,13 @@ This command stops the Docker containers, leaving the machines (and of course al
 
 As you might imagine, you can use `docker-compose start` to start them again.
 
-### Delete only the containers
+#### Delete only the containers
 
 This command removes the containers but preserves all data in MySQL, Mediawiki and the query service in Docker volumes.
 
 `docker-compose down`
  
-### Remove the containers and data
+#### Remove the containers and data
 
 WARNING: this will remove ALL of the data you may have added to MediaWiki, Wikibase, the QueryService and ElasticSearch.
 
