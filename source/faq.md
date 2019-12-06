@@ -4,7 +4,7 @@ title: FAQ
 nav_name: faq
 ---
 
-# Frequently asked questions
+## Frequently asked questions
 
 ### What is the difference between Wikibase and Wikidata?
 
