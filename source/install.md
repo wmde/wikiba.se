@@ -72,13 +72,9 @@ WARNING: this will remove ALL of the data you may have added to MediaWiki, Wikib
 
 `docker-compose down --volumes`
 
-## Reference
+<hr />
 
-Below you'll find much more information on managing your Wikibase install with Docker.
-- [README-compose.md](https://github.com/wmde/wikibase-docker/blob/master/README-compose.md) from the [wikibase-docker](https://github.com/wmde/wikibase-docker) repository
-- 
-
-
+For more information, check out this [README](https://github.com/wmde/wikibase-docker/blob/master/README-compose.md) from the [wikibase-docker](https://github.com/wmde/wikibase-docker) repository on GitHub.
 
 
 

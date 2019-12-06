@@ -7,7 +7,7 @@ nav_name: implementations
 
 # Implementations
 
-**Who uses Wikibase?** Any organization can use it to manage and open up their structured data, and hundreds do -- in particular, many data-minded [GLAM](https://en.wikipedia.org/wiki/GLAM_(industry_sector)) organizations across the world. Here's a sampling of them and their projects using Wikibase. 
+**Who uses Wikibase?** Any organization can use it to manage and open up their structured data, and hundreds do&mdash;in particular, many data-minded [GLAM](https://en.wikipedia.org/wiki/GLAM_(industry_sector)) organizations across the world. Here's a sampling of them and their projects using Wikibase. 
 
 ## Libraries
 
