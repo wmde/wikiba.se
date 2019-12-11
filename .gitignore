@@ -3,3 +3,5 @@ composer.lock
 output_*/
 vendor/
 source/components/
+.phpunit.result.cache
+
