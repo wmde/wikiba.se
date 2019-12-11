@@ -35,7 +35,7 @@ We’ve put together a set of machines in Docker that should have you up and run
     1. Run `docker-compose ps`. You should see eight images in an “Up” state. 
     2. Check the logs for success or errors -- for example, using this command:
 
-    `docker-compose logs --tail="20" -t`
+        `docker-compose logs --tail="20" -t`
 
     3. Try to load the front end and the query interface in your browser (see below). 
 
