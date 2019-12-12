@@ -7,7 +7,6 @@ This repo contains the resources of the [wikiba.se website](https://wikiba.se).
 ## Prerequisites
 
 - [PHP](https://www.php.net/manual/en/install.php) with the [php-xml](https://stackoverflow.com/questions/38793676/php-xml-extension-not-installed) extension installed
-- [phpunit](https://phpunit.de/getting-started/phpunit-8.html) (for testing)
 - [Composer](https://getcomposer.org/doc/00-intro.md)
 
 ## Installation
