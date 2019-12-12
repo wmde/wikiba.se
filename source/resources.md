@@ -24,5 +24,5 @@ nav_name: resources
 
 ### Miscellaneous
 
-Adam Shorland's [blog posts on the topic of Wikibase](https://addshore.com/tag/wikibase/)
+Addshore's [blog posts on the topic of Wikibase](https://addshore.com/tag/wikibase/)
 
