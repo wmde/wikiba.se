@@ -35,3 +35,9 @@ You can also run Sculpin in a docker container:
 Change into the root directory of the project and run
 
     composer test
+
+## Deployment
+
+ - This site is deployed to https://wikiba.se
+ - The site can be updated by the WMDE Internal IT department
+ - The domain name is also controlled by the WMDE Internal IT department
