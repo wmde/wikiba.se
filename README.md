@@ -21,11 +21,11 @@ This will install all dependencies, including [Sculpin](https://sculpin.io/).
 
 For development and testing:
 
-    vendor/bin/sculpin generate --watch --server
+    composer dev
 
 For deployment to production:
 
-    vendor/bin/sculpin generate --env=prod
+    composer build
 
 You can also run Sculpin in a docker container:
 
@@ -35,4 +35,4 @@ You can also run Sculpin in a docker container:
 
 Change into the root directory of the project and run
 
-    phpunit
+    composer test
