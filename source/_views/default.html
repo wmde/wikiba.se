@@ -8,6 +8,22 @@
 	<link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 	<link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/images/favicon.ico">
+
+	<!-- Matomo -->
+	<script type="text/javascript">
+		var _paq = window._paq || [];
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="//{{ site.matomo_host }}/";
+			_paq.push(['setTrackerUrl', u+'matomo.php']);
+			_paq.push(['setSiteId', '{{ site.matomo_site_id }}']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
 </head>
 <body>
 	<div class="container">
@@ -54,5 +70,9 @@
 	<div class="container">
 		{% block content %}{% endblock %}
 	</div>
+
+	<!-- Matomo Image Tracker-->
+	<img src="https://{{ site.matomo_host }}/matomo.php?idsite={{ site.matomo_site_id }}&amp;rec=1" style="border:0" alt="" />
+	<!-- End Matomo -->
 </body>
 </html>
