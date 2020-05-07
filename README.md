@@ -28,7 +28,7 @@ For deployment to production:
 
 You can also run Sculpin in a docker container:
 
-    docker run --rm -it -p 8000:8000 -v "/$PWD://app" php:latest sh -c "cd //app; vendor/bin/sculpin help"
+    docker run --rm -it -p 8000:8000 -v "/$PWD://app" php:latest sh -c "cd //app; vendor/bin/sculpin serve"
 
 ## Running the tests
 
