@@ -1,16 +1,10 @@
 ---
 layout: default
-title: Resources
-nav_name: resources
+title: Developers
+nav_name: developers
 ---
 
-## Resources
-
-### Learn about Wikibase
-
-* On the Wikimedia blog: [Lingua Libre](https://wikimediafoundation.org/news/2018/12/14/many-faces-of-wikibase-lingua-libre-makes-%cb%88laengw%c9%99%ca%a4%c9%99z-audible/), [Rhizome](https://wikimediafoundation.org/news/2018/09/06/rhizome-wikibase/) and [Factgrid](https://wikimediafoundation.org/news/2018/08/30/wikibase-illuminati-history/)
-
-### For developers
+## For developers
 
 - **[Wikibase documentation central](https://doc.wikimedia.org/Wikibase/master/php/)**
 - [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
