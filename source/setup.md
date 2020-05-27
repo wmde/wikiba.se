@@ -6,25 +6,25 @@ nav_name: setup
 ---
 ## Setup
 
-Here you are, fresh from <a href="install">installing Wikibase on Docker</a>. What do you do now?
+Here you are, fresh from [installing Wikibase on Docker](install). What do you do now?
 
-### <a href="whig">What have I got?</a>
+### [What have I got?](whig)
 
-Check out our simple architecture overview.
+Check out our architecture overview for the Docker images.
 
-### <a href="extend">Adding on</a>
+### [Adding on](extend)
 
 Find out what Wikibase admins often change, add and tweak after installing.
 
-### <a href="import">Getting data in</a>
+### [Importing data](import)
 
 Wikibase is all about the data. Understand your options for importing data.
 
-### <a href="caf">Care and feeding</a>
+### [Care and feeding](caf)
 
 Your Wikibase installation is a living thing. Learn how to keep it alive and healthy.
 
-### <a href="fed">Federation</a>
+### [Federation](fed)
 
 Here's a thorough explanation of the various kinds of federation available for Wikibase.
 
