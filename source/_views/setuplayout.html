@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ site.title }} &mdash; {{ page.title }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="{{ site.url }}/components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="{{ site.url }}/components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/images/favicon.ico">
+
+</head>
+<body>
+	<div class="container">
+		<nav class="nav nav-pills main-nav">
+			<li>
+				<a href="{{ site.url }}/" class="home" title="Home">
+					<img class="logo" src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
+				</a>
+			</li>
+            <li {% if page.nav_name == 'showcase' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/showcase">Showcase</a>
+            </li>
+            <li {% if page.nav_name == 'install' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/install">Install</a>
+            </li>
+            <li {% if page.nav_name == 'setup' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/setup">Setup</a>
+            </li>
+            <li {% if page.nav_name == 'developers' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/developers">Developers</a>
+            </li>
+            <li {% if page.nav_name == 'faq' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/faq">FAQ</a>
+            </li>
+            <li {% if page.nav_name == 'contact' %}class="active"{% endif %}>
+                <a href="{{ site.url }}/contact">Contact</a>
+            </li>
+		</nav>
+	</div>
+	{% if page.nav_name == 'home' %}
+		<div class="jumbotron banner">
+			<div class="container">
+				<picture class="logo">	
+					<img src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
+				</picture>
+				<div class="banner-text">
+					Welcome to the <strong>Wikibase</strong> project!
+					<p class="sub">
+					Wikibase is an open-source software suite for creating collaborative knowledge bases,<br />opening the door to the Linked Open Data web. 
+					</p>
+				</div>
+			</div>
+		</div>
+	{% else %}
+		<hr class="nav-divide">
+	{% endif %}
+	<div class="container">
+		{% block content %}{% endblock %}
+	</div>
+
+	<!-- Matomo Image Tracker-->
+	<img src="https://{{ site.matomo_host }}/matomo.php?idsite={{ site.matomo_site_id }}&amp;rec=1" style="border:0" alt="" />
+	<!-- End Matomo -->
+</body>
+</html>
