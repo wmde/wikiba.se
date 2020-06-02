@@ -17,11 +17,11 @@ Wikibase is a powerful and extensible piece of software, and the state you find 
 
 ### Templates
 
-[MediaWiki templates](https://www.mediawiki.org/wiki/Help:Templates) work like text macros, replacing defined words marked by `{ { } }` with longer strings of text. They're powerful and very easy to write.
+[MediaWiki templates](https://www.mediawiki.org/wiki/Help:Templates) work like text macros, replacing defined words marked by `{{ '{{' }} {{ '}}' }}` with longer strings of text. They're powerful and very easy to write.
 
 Some few that Wikibase users find useful:
 
-* [SPARQL](http://wikidata.org/wiki/Template:SPARQL): SPARQL query syntaxt highlighting
+* [SPARQL](http://wikidata.org/wiki/Template:SPARQL): SPARQL query syntax highlighting
 * [Q](https://www.wikidata.org/wiki/Template:Q): creates a direct link to an item
 * [Property](https://www.wikidata.org/wiki/Template:Property): displays a localized label for a property
 
@@ -29,10 +29,9 @@ To view the templates installed on your instance, navigate to `<your instance UR
 
 You can also check out this helpful third-party overview of templates: [ryadel.com](https://www.ryadel.com/en/how-to-add-wikipedia-mbox-templates-to-your-own-mediawiki/)
 
-#### LUA
+#### Lua 
 
-
-
+Templates can call modules written in [Lua](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua), making templates even more powerful. Check out the [tutorial](https://www.mediawiki.org/wiki/Lua/Tutorial) and see the [scripting language section](#Scripting>) below.
 
 
 ### Extensions
@@ -50,8 +49,15 @@ To view the extensions you currently have installed, navigate to `<your Wikibase
 * [Advanced Search](https://www.mediawiki.org/wiki/Extension:AdvancedSearch): expands the search form with many additional options
 * [Visual Editor](https://www.mediawiki.org/wiki/Extension:VisualEditor): offers an optional rich-text editor (see also the [project page](https://www.mediawiki.org/wiki/VisualEditor))
 
+#### Scripting
+
+* [Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto): enables the embedding of scripting languages into MediaWiki, currently only [Lua](https://www.mediawiki.org/wiki/Lua_scripting). This enables, among other powerful applications for scripting, the use of Lua modules in templates ([see above](#Lua)).
+ * [Lua tutorial for MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual)
+ * [Differences from standard Lua](https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual#Differences_from_standard_Lua)
+
 #### Content management and spam protection
 
+* [Abuse Filter](https://www.mediawiki.org/wiki/Extension:AbuseFilter): create filters for editing to forestall abusive activity
 * [Nuke](https://www.mediawiki.org/wiki/Extension:Nuke): enable mass deletion of pages
 * [Confirm Edit](https://www.mediawiki.org/wiki/Extension:ConfirmEdit): add CAPTCHA checks before an edit is confirmed
 * [Tor Block](https://www.mediawiki.org/wiki/Extension:TorBlock): restrict access for Tor exit nodes
@@ -60,18 +66,20 @@ To view the extensions you currently have installed, navigate to `<your Wikibase
 
 * [OAuth](https://www.mediawiki.org/wiki/Extension:OAuth): implements [OAuth](https://oauth.net/), required for some tools to work correctly with Wikibase
 * [Wikibase Quality Constraints](https://www.mediawiki.org/wiki/Extension:WikibaseQualityConstraints) ([install](https://github.com/wikimedia/mediawiki-extensions-WikibaseQualityConstraints)): impose constraints on your data. See also the [constraints portal](https://www.wikidata.org/wiki/Help:Property_constraints_portal).
-* [Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto): 
-** https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua
+ * [Detailed reference for Lua in MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua)
 * [CLDR](https://www.mediawiki.org/wiki/Extension:CLDR): 
 * [Universal Language Selector](https://www.mediawiki.org/wiki/Extension:UniversalLanguageSelector):
+* [Property Suggester](https://www.mediawiki.org/wiki/Extension:PropertySuggester): 
 
 And last but not least:
 
-* [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets): enables the use of gadgets (see below). This extension needs to be installed and enabled before implementing anything listed in the next section!
+* [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets): enables the use of gadgets (see below). You may well find that this extension is already installed on your instance, but [make sure](#Extensions): it needs to be installed and enabled before implementing anything listed in the next section!
 
 ### Gadgets
 
-Gadgets are small, optional-per-user interface modifications. Some examples can be found in the [MediaWiki gadget list](https://www.mediawiki.org/wiki/Extension:Gadgets#List_of_gadget_scripts) and [Wikidata's installed gadgets](https://www.wikidata.org/wiki/Special:Gadgets), and here's a guide to [write your own](https://www.mediawiki.org/wiki/Gadget_kitchen).
+Gadgets are small, optional-per-user interface modifications. Some examples can be found in the [MediaWiki gadget list](https://www.mediawiki.org/wiki/Extension:Gadgets#List_of_gadget_scripts) and [Wikidata's installed gadgets](https://www.wikidata.org/wiki/Special:Gadgets), and here's a guide to [writing your own](https://www.mediawiki.org/wiki/Gadget_kitchen).
+
+Here's how to [install a gadget](https://www.mediawiki.org/wiki/Extension:Gadgets#Installation).
 
 The following are some popular gadget choices for Wikibase users:
 
