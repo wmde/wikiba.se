@@ -25,7 +25,7 @@ Some few that Wikibase users find useful:
 * [Q](https://www.wikidata.org/wiki/Template:Q): creates a direct link to an item
 * [Property](https://www.wikidata.org/wiki/Template:Property): displays a localized label for a property
 
-To view the templates installed on your instance, navigate to `<your instance URL>/wiki/Special:AllPages?from=&to=&namespace=10`
+To view the templates installed on your instance, navigate to `<your Wikibase URL>/wiki/Special:AllPages?from=&to=&namespace=10`
 
 You can also check out this helpful third-party overview of templates: [ryadel.com](https://www.ryadel.com/en/how-to-add-wikipedia-mbox-templates-to-your-own-mediawiki/)
 
@@ -43,6 +43,8 @@ You can browse and download many extensions with the MediaWiki [ExtensionDistrib
 [These install instructions](https://www.mediawiki.org/wiki/Manual:Extensions#Installing_an_extension) should cover most cases, but some extensions have special instructions called out separately below.
 
 To view the extensions you currently have installed, navigate to `<your Wikibase URL>/wiki/Special:Version#mw-version-ext`.
+
+Note that the following list doesn't include extensions meant for importing data into Wikibase, several options for which are covered in some detail over at [Importing data](#Import).
 
 #### General utility
 
@@ -93,8 +95,7 @@ The following are some popular gadget choices for Wikibase users:
 
 ### Other additions
 
-As if templates, extensions and gadgets weren't enough, there are many other ways you can customize your Wikibase installation. Here are some of the most common.
-
+As if templates, extensions and gadgets weren't enough, there are many other ways you can customize your Wikibase installation. Here are some of the most commonly used. 
 
 #### Interface messages
 
@@ -113,6 +114,13 @@ First, complete the [sitelinks section of the install doc](https://www.mediawiki
 Wikibase's content displays in the order in which it was added to the database. To change the default order, you'll need to use a sorted properties list.
 
 Learn more about it on the [Sorted Properties](https://www.mediawiki.org/wiki/Manual:Interface/Wikibase-SortedProperties) page, and check out [Wikidata's own Sorted Properties](https://www.wikidata.org/w/index.php?title=MediaWiki:Wikibase-SortedProperties) for inspiration.
+
+#### Pywikibot
+
+For more advanced users who seek tools to help them manage their data, there's [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot). It started life as a tool made for Wikipedia but was adapted to work on other Wikimedia projects, including Wikibase installations. Pywikibot amounts to a [collection of scripts](https://www.mediawiki.org/wiki/Manual:Pywikibot/Scripts) that can change and manipulate data programmatically, potentially saving large amounts of manual work.
+
+Check out the [third-party wiki quick start](https://www.mediawiki.org/wiki/Manual:Pywikibot/Third-party_Wiki_Quick_Start) for Pywikibot to see if it might be right for your installation.
+
 
 ### Know your local settings
 
