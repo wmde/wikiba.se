@@ -6,7 +6,8 @@ nav_name: developers
 
 ## For developers
 
-- **[Wikibase documentation central](https://doc.wikimedia.org/Wikibase/master/php/)**
+- **[PHP documentation](https://doc.wikimedia.org/Wikibase/master/php/)**
+- **[JS documentation](https://doc.wikimedia.org/Wikibase/master/js/)**
 - [Programmer's guide to Wikibase](https://www.mediawiki.org/wiki/Wikibase/Programmer%27s_guide_to_Wikibase)
 - Learn about being a Wikimedia [developer](https://www.mediawiki.org/wiki/Developer_account)
   - Review the [coding conventions](https://www.mediawiki.org/wiki/Wikibase/Coding_conventions)

@@ -8,25 +8,26 @@ nav_name: setup
 
 Here you are, fresh from [installing Wikibase on Docker](install). What do you do now?
 
-### [Adding on](extend)
-
-Find out what Wikibase admins often change, add and tweak after installing.
-
-### [Importing data](import)
-
-Wikibase is all about the data. Understand your options for data import.
-
 ### [Care and feeding](caf)
 
 Your Wikibase installation is a living thing. Learn how to keep it alive and healthy.
 
-### [Federation](fed)
+### [Extending](extend)
+
+Find out what Wikibase admins often change, add and tweak after installing.
+
+### [Importing](import)
+
+Wikibase is all about the data. Understand your options for data import.
+
+### [Federating](fed)
 
 Here's a thorough explanation of the various kinds of federation available for Wikibase.
 
-### What have I got here?
+### Other resources
 
-Take a look at our [architecture overview](https://github.com/wmde/wikibase-docker) in Docker.
-
+* [Learning Wikibase](http://learningwikibase.com/)
+* [Wikibase Query Service Tutorial](http://wikidata.wwwnlsrc4.supercp.com/)
+* [Working with MediaWiki](https://workingwithmediawiki.com/book/)
 
 

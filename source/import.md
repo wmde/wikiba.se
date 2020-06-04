@@ -8,25 +8,26 @@ nav_name: import
 
 Perhaps the greatest challenge of a clean, empty database is that of properly filling it up with what you want to put in it.  Wikibase is no exception; this section covers the most common and useful tools for getting data into Wikibase.
 
-### QuickStatements
+### [QuickStatements](https://www.wikidata.org/wiki/Help:QuickStatements)
 
-[QuickStatements](https://www.wikidata.org/wiki/Help:QuickStatements) is the tool you'll find already running in your Docker setup. It's more than an import tool; it can be used to edit and modify data. It also has a fairly snazzy interface, which you'll find on your Wikibase instance under `<your Wikibase url>/tools/quickstatements`.
+QuickStatements is the useful import tool you'll find already running in your Docker setup. It's more than an import tool; it can be used to edit and modify data. It also has a fairly snazzy interface, which you'll find on your Wikibase instance under `<your Wikibase url>/tools/quickstatements`.
 
 The essential help document linked above is packed with useful information far too intricate to be summarized here, but it's worth noting that [OpenRefine](https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine) data ([see below]({{site.url}}/import#OpenRefine)) can be exported to QuickStatements format.
 
-### WikibaseImport
+### [WikibaseImport](https://github.com/filbertkm/WikibaseImport)
 
-[WikibaseImport](https://github.com/filbertkm/WikibaseImport) is a MediaWiki [extension](extend) and flexible, powerful command-line tool that allows you to import into Wikibase using exports of data from other Wikibase instances. It's best for seasoned Wikibase users who have a firm grasp of Wikibase's [data architecture](https://www.mediawiki.org/wiki/Wikibase/DataModel) and are comfortable using command-line tools on their instance's web server.
+WikibaseImport is a MediaWiki [extension]({{site.url}}/extend#Extensions) and a flexible, powerful command-line tool that allows you to import into Wikibase using exports of data from other Wikibase instances. It's best for seasoned Wikibase users who have a firm grasp of Wikibase's [data architecture](https://www.mediawiki.org/wiki/Wikibase/DataModel) and are comfortable using command-line tools on their instance's web server. (See the [care and feeding section]({{site.url}}/caf) for more information on working directly with a container)
 
 To install WikibaseImport, follow its [install instructions](https://github.com/filbertkm/WikibaseImport#install). You can also find more information on working with extensions on our [Extending Wikibase]({{site.url}}/extend) page.
 
-### Wikibase Integrator
+### [WikibaseIntegrator](https://github.com/Mystou/WikibaseIntegrator)
 
-[WikibaseIntegrator](https://github.com/Mystou/WikibaseIntegrator), also known as WikiData Integrator, is a Python tool
+Wikibase Integrator, also known as Wikidata Integrator, is a Python tool for creating sophisticated bots that can read from and write to Wikibase. It was developed to improve on [Pywikibot]()'s handling of the MediaWiki API and integrate tightly with the Wikibase SPARQL endpoint.
 
-### OpenRefine
+Read [here](https://www.wikidata.org/wiki/User:ProteinBoxBot) how the developers put WikidataIntegrator to work.
 
-https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine
+### [OpenRefine](https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine)
 
-but
-https://github.com/OpenRefine/OpenRefine/issues/2144
+Originally developed by Google, OpenRefine is now a community-supported data management tool that can handle large bodies of data and wrangle them into a format suitable for importing into Wikibase.
+
+It's worth noting that OpenRefine support for Wikimedia properties is not complete, as can be seen in this [discussion on adding support for Wikimedia Commons](https://github.com/OpenRefine/OpenRefine/issues/2144).

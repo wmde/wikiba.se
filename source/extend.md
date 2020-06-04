@@ -13,25 +13,29 @@ nav_name: extend
 * [Gadgets](extend#Gadgets)
 * [Other additions](extend#Other-additions)
 
-Wikibase is a powerful and extensible piece of software, and the state you find it in when you've just launched your Docker images is almost certainly not the state you'll want it in when you're finished setting it up.
+Wikibase is a powerful and extensible piece of software, and a large amount of what it can do lies beyond the fairly stripped-down state Wikibase is in when you run your Docker images for the first time. 
+
+On this page you can take a quick, link-heavy tour of the resources available to help you extend your instance and give it the functionality you want and need it to have.
 
 ### Templates
 
-[MediaWiki templates](https://www.mediawiki.org/wiki/Help:Templates) work like text macros, replacing defined words marked by `{{ '{{' }} {{ '}}' }}` with longer strings of text. They're powerful and very easy to write.
+[MediaWiki templates](https://www.mediawiki.org/wiki/Help:Templates) work a bit like text macros in that they contain content meant to be [transcluded](https://www.mediawiki.org/wiki/Transclusion) into other wiki pages. But their functionality can extend far beyond simple text replacement when scripting comes into play (see [Lua]({{site.url}}/extend#Lua) below).
 
-Some few that Wikibase users find useful:
+To view the templates installed on your (or any) instance, navigate to `<your Wikibase URL>/wiki/Special:AllPages?from=&to=&namespace=10`.
+
+While there is no single repository for MediaWiki templates, Wikipedia does offer a robust [template resource page](https://en.wikipedia.org/wiki/Wikipedia:Template_index), and they are easily turned up in web searches and by looking through what's installed on any given instance of MediaWiki. When you find a template you want to use, follow [these instructions](https://www.mediawiki.org/wiki/Help:Templates#Copying_from_one_wiki_to_another) to start using it on your instance.
+
+A few templates that Wikibase users often find useful:
 
 * [SPARQL](http://wikidata.org/wiki/Template:SPARQL): SPARQL query syntax highlighting
 * [Q](https://www.wikidata.org/wiki/Template:Q): creates a direct link to an item
 * [Property](https://www.wikidata.org/wiki/Template:Property): displays a localized label for a property
 
-To view the templates installed on your instance, navigate to `<your Wikibase URL>/wiki/Special:AllPages?from=&to=&namespace=10`
-
 You can also check out this helpful third-party overview of templates: [ryadel.com](https://www.ryadel.com/en/how-to-add-wikipedia-mbox-templates-to-your-own-mediawiki/)
 
 #### Lua 
 
-Templates can call modules written in [Lua](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua), making templates even more powerful. Check out the [tutorial](https://www.mediawiki.org/wiki/Lua/Tutorial) and see the [scripting language section](#Scripting>) below.
+Templates can call modules written in the [Lua](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua) scripting language, making them more powerful. Check out the [tutorial](https://www.mediawiki.org/wiki/Lua/Tutorial) and see the [scripting language section](#Scripting>) below.
 
 
 ### Extensions
@@ -67,31 +71,28 @@ Note that the following list doesn't include extensions meant for importing data
 #### Wikibase-specific
 
 * [OAuth](https://www.mediawiki.org/wiki/Extension:OAuth): implements [OAuth](https://oauth.net/), required for some tools to work correctly with Wikibase
-* [Wikibase Quality Constraints](https://www.mediawiki.org/wiki/Extension:WikibaseQualityConstraints) ([install](https://github.com/wikimedia/mediawiki-extensions-WikibaseQualityConstraints)): impose constraints on your data. See also the [constraints portal](https://www.wikidata.org/wiki/Help:Property_constraints_portal).
  * [Detailed reference for Lua in MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua)
-* [CLDR](https://www.mediawiki.org/wiki/Extension:CLDR): 
-* [Universal Language Selector](https://www.mediawiki.org/wiki/Extension:UniversalLanguageSelector):
-* [Property Suggester](https://www.mediawiki.org/wiki/Extension:PropertySuggester): 
+* [CLDR](https://www.mediawiki.org/wiki/Extension:CLDR): contains and manages locale-specific information regarding the display of data in different languages and formats
+* [Universal Language Selector](https://www.mediawiki.org/wiki/Extension:UniversalLanguageSelector): allows users to configure an interface language of their choice
+* [Property Suggester](https://www.mediawiki.org/wiki/Extension:PropertySuggester): adds useful auto-suggestion of properties for manual edits
 
-And last but not least:
+#### Data quality and constraints
 
-* [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets): enables the use of gadgets (see below). You may well find that this extension is already installed on your instance, but [make sure](#Extensions): it needs to be installed and enabled before implementing anything listed in the next section!
+You can manage the quality of your Wikibase data by imposing constraints (which are actually more like guidelines).
+
+[Wikibase Quality Constraints](https://www.mediawiki.org/wiki/Extension:WikibaseQualityConstraints) ([install](https://github.com/wikimedia/mediawiki-extensions-WikibaseQualityConstraints)) is a powerful extension that helps you impose constraints on your data. 
+
+See also the [constraints portal](https://www.wikidata.org/wiki/Help:Property_constraints_portal) which offers many constraints-oriented resources and tips on how to implement them effectively.
+
+#### Last but not least
+
+The [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets) extension enables the use of gadgets (see below). You may well find that this extension is already installed on your instance, but [make sure](#Extensions): it needs to be installed and enabled before implementing anything listed in the next section!
 
 ### Gadgets
 
-Gadgets are small, optional-per-user interface modifications. Some examples can be found in the [MediaWiki gadget list](https://www.mediawiki.org/wiki/Extension:Gadgets#List_of_gadget_scripts) and [Wikidata's installed gadgets](https://www.wikidata.org/wiki/Special:Gadgets), and here's a guide to [writing your own](https://www.mediawiki.org/wiki/Gadget_kitchen).
+Gadgets are small, optional-per-user interface modifications. Some examples can be found in the [MediaWiki gadget list](https://www.mediawiki.org/wiki/Extension:Gadgets#List_of_gadget_scripts) and [Wikidata's installed gadgets](https://www.wikidata.org/wiki/Special:Gadgets)
 
-Here's how to [install a gadget](https://www.mediawiki.org/wiki/Extension:Gadgets#Installation).
-
-The following are some popular gadget choices for Wikibase users:
-
-* Merge
-* labelLister
-* currentDate
-
-
-
-
+Here's a guide to [writing your own](https://www.mediawiki.org/wiki/Gadget_kitchen), and here's how to [install a gadget](https://www.mediawiki.org/wiki/Extension:Gadgets#Installation).
 
 ### Other additions
 
@@ -105,9 +106,11 @@ Consult the [System message](https://www.mediawiki.org/wiki/Help:System_message)
 
 #### Sitelinks
 
-Although the Docker images handle most of the config changes shown in the [Wikibase install documentation](https://www.mediawiki.org/wiki/Wikibase/Installation), [sitelinks](https://www.wikidata.org/wiki/Help:Sitelinks) are a notable exception. Setting up sitelinks allows Wikibase to link to other wikis.
+[Sitelinks](https://www.wikidata.org/wiki/Help:Sitelinks) allow Wikibase's MediaWiki interface to link to other wikis in a more useful way than a simple hyperlink. A good example is the language selector on Wikipedia pages; it relies on sitelinks established to wikis in other languages.
 
-First, complete the [sitelinks section of the install doc](https://www.mediawiki.org/wiki/Wikibase/Installation#Enable_Sitelinks). Then consult the [sites table](https://www.mediawiki.org/wiki/Help:System_message) for further guidance.
+Although the Docker images handle most of the config changes shown in the [Wikibase install documentation](https://www.mediawiki.org/wiki/Wikibase/Installation), sitelinks are a notable exception. 
+
+To get sitelinks working, first work through the [sitelinks section of the install doc](https://www.mediawiki.org/wiki/Wikibase/Installation#Enable_Sitelinks). Then consult the [sites table](https://www.mediawiki.org/wiki/Help:System_message) for further guidance.
 
 #### Sorted properties/statements
 
@@ -120,22 +123,4 @@ Learn more about it on the [Sorted Properties](https://www.mediawiki.org/wiki/Ma
 For more advanced users who seek tools to help them manage their data, there's [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot). It started life as a tool made for Wikipedia but was adapted to work on other Wikimedia projects, including Wikibase installations. Pywikibot amounts to a [collection of scripts](https://www.mediawiki.org/wiki/Manual:Pywikibot/Scripts) that can change and manipulate data programmatically, potentially saving large amounts of manual work.
 
 Check out the [third-party wiki quick start](https://www.mediawiki.org/wiki/Manual:Pywikibot/Third-party_Wiki_Quick_Start) for Pywikibot to see if it might be right for your installation.
-
-
-### Know your local settings
-
-You can add any number of extensions, templates and gadgets, and they vary widely both in popularity and in ease of installation. To use many of these add-ons, you'll need to make changes to the [LocalSettings.php](https://www.mediawiki.org/wiki/Manual:LocalSettings.php) file on your MediaWiki/Wikibase Docker instance (often `docker_wikibase_1`). 
-
-Although this manual isn't meant to replace a grounding in Docker, the following commands may help you get at and edit this very important file:
-
-#### Copy the file to your local directory
-```
-docker cp docker_wikibase_1:/var/www/html/LocalSettings.php LocalSettings.php
-```
-#### After editing the file on your local computer, copy it back
-```
-docker cp LocalSettings.php docker_wikibase_1:/var/www/html/LocalSettings.php 
-```
-
-Read [Adam Shorland's excellent blog post](https://addshore.com/2018/06/customizing-wikibase-config-in-the-docker-compose-example/) for more detail on modifying files on containers,
 

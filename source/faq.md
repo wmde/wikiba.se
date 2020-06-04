@@ -32,12 +32,10 @@ There's not a single canonical list&mdash;on our [Showcase]({{site.url}}/showcas
 
 Here's Wikidata's [query service manual](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual) and some [SPARQL examples](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples).
 
-### How do federated queries work?
+### How does federation work?
 
-Wikibase supports [SPARQL's federated querying](https://www.w3.org/TR/sparql11-federated-query/) against these [endpoints](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/SPARQL_Federation_endpoints). 
-
-There's also an interesting [blog post](https://addshore.com/2018/04/wikibase-of-wikibases/) that demonstrates some federated querying in the context of the Wikibase registry.
+Check out our [federation page]({{site.url}}/fed).
 
 ### How can I get data into Wikibase?
 
-First, definitely make [QuickStatements](https://www.wikidata.org/wiki/Help:QuickStatements) your friend. There is also the Python-based [Wikidata integrator](https://github.com/SuLab/WikidataIntegrator), which is (as you might imagine) Wikidata-focused but can of course be used with any Wikibase instance.
+Check out our [import tools page]({{site.url}}/import).

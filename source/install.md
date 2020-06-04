@@ -41,41 +41,5 @@ We’ve put together a set of machines in Docker that should have you up and run
 
 ### Using your new instance
 
-Once all the services have started, you can begin to explore your empty instance of Wikibase.
-
-- **Visit the front page!** [http://localhost:8181/](http://localhost:8181/)  
-  - Don't forget to [change](http://localhost:8181/w/index.php?title=Special:ChangeCredentials/MediaWiki%5CAuth%5CPasswordAuthenticationRequest&returnto=Special%3APreferences) the default username and password: _WikibaseAdmin_ / _WikibaseDockerAdminPass_ 
-- **Visit the query service!** [http://localhost:8282/](http://localhost:8282/) 
-- **Add some data!** Get started here: [https://www.wikidata.org/wiki/Help:QuickStatements](https://www.wikidata.org/wiki/Help:QuickStatements)  
-
-  
-
-### Maintenance
- 
-#### Stop the containers
-
-This command stops the Docker containers, leaving the machines (and of course all data) intact:
-
-`docker-compose stop`
-
-As you might imagine, you can use `docker-compose start` to start them again.
-
-#### Delete only the containers
-
-This command removes the containers but preserves all data in MySQL, Mediawiki and the query service in Docker volumes.
-
-`docker-compose down`
- 
-#### Remove the containers and data
-
-WARNING: this will remove ALL of the data you may have added to MediaWiki, Wikibase, the QueryService and ElasticSearch.
-
-`docker-compose down --volumes`
-
-<hr />
-
-For more information, check out this [README](https://github.com/wmde/wikibase-docker/blob/master/README-compose.md) from the [wikibase-docker](https://github.com/wmde/wikibase-docker) repository on GitHub.
-
-
-
+Once all the services have started, you can begin the exciting process of filling up, extending and customizing your empty instance of Wikibase. Take a look at our [setup resources page]({{site.url}}/setup) to get started.
 
