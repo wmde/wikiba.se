@@ -6,6 +6,13 @@ nav_name: caf
 ---
 ## Care and feeding of a Wikibase instance
 
+* [Architecture overview]({{site.url}}/caf#architecture-overview)
+* [Docker tooling]({{site.url}}/caf#docker-tooling)
+ * [Logs]({{site.url}}/caf#logs)
+* [Backup and restore]({{site.url}}/caf#backup-and-restore)
+* [Wiki tools]({{site.url}}/caf#wiki-tools)
+* [Updating]({{site.url}}/caf#updating)
+
 Here are some resources to give you some insight into your Wikibase instance and to help keep it healthy and up to date.
 
 ### Architecture overview
@@ -126,7 +133,7 @@ This command removes the containers but preserves all data in MySQL, MediaWiki a
 `docker-compose down --volumes`
 
 
-#### Logs
+### Logs
 
 Each application in the Wikibase cluster has its own log output. Consult each service's own documentation to learn how to read its logs.
 
@@ -142,16 +149,23 @@ mysql_1 | 2019-12-31 10:00:00+00:00 [Note] [Entrypoint]: Switching to dedicated 
 
 The data in your Wikibase instance is valuable. Regular backups and tested restores of data are vital.
 
-Regardless of whether you choose to make backups on the Docker level or inside your Docker containers, the two kinds of data you'll need to back up are the changed items on the MediaWiki/Wikibase filesystem and, more importantly, the MySQL database.
+Genersally, there are two bodies of data you'll need to back up: the MediaWiki/Wikibase filesystem and, more importantly, the MySQL database.
+
+First and foremost, we recommend reading the [Wikibase Docker README](https://github.com/wmde/wikibase-docker/blob/master/README-compose.md) to get the lay of the land.
 
 #### Docker level
+
+Since this is a Docker install, backup using Docker tools is recommended.
+
+Docker-level backup is explained in some detail in [this section of the wikibase-docker README](https://github.com/wmde/wikibase-docker/blob/master/README-compose.md#backing-up-data-from-docker-volumes). It involves backing up the Docker [volumes](https://docs.docker.com/storage/volumes/) and dumping out the database with [mysqldump](https://mariadb.com/kb/en/making-backups-with-mysqldump/).
 
 For a helpful overview of Docker data backup and restore, including the use of the `docker save` and `docker load` commands, read this excellent [StackOverflow post](https://stackoverflow.com/questions/26331651/how-can-i-backup-a-docker-container-with-its-data-volumes#26339848). It's been updated several times since its original posting in 2014 and constitutes a great tour and jumping-off point for the docker command-line reference linked above.
 
 #### On-container level
 
-Read the documentation on [backing up a MediaWiki](https://www.mediawiki.org/wiki/Manual:Backing_up_a_wiki), bearing in mind that the work needs to be done from within the containers. 
+Backup on the container level is not an easy proposition; we cover it here mainly to present a more complete picture of MediaWiki and Wikibase under the hood.
 
+To that end, read the documentation on [backing up a MediaWiki](https://www.mediawiki.org/wiki/Manual:Backing_up_a_wiki), bearing in mind that the work needs to be done from within the containers (cf. [Docker tooling]({{site.url}}/caf#docker-tooling) above) and the data extracted and placed somewhere safe outside of Docker.
 
 
 ### Wiki tools
@@ -162,3 +176,11 @@ Wikibase is an extension of MediaWiki. Much of the functionality you'll be worki
 * [User rights management](https://www.mediawiki.org/wiki/Manual:User_rights)
 * [Wiki admin guide](https://www.mediawiki.org/wiki/Manual:Administrators)
 
+
+### Updating
+
+Keeping software up to date is the only way to obtain new features, not to mention how important it is to apply bug and security fixes. 
+
+Updating Wikibase on Docker involves upgrading MediaWiki itself (see the [MediaWiki update documentation](https://www.mediawiki.org/wiki/Manual:Update.php)) as well as tweaking the [docker-compose.yml](https://github.com/wmde/wikibase-docker/blob/master/docker-compose.yml) file itself.
+
+For this manual and precarious process, Adam Shorland's seminal [blog post](https://addshore.com/2019/01/wikibase-docker-mediawiki-wikibase-update/) on the topic is a must-read.

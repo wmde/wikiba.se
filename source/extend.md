@@ -8,10 +8,10 @@ nav_name: extend
 
 ## Extending Wikibase
 
-* [Templates](extend#Templates)
-* [Extensions](extend#Extensions)
-* [Gadgets](extend#Gadgets)
-* [Other additions](extend#Other-additions)
+* [Templates]({{site.url}}/extend#templates)
+* [Extensions]({{site.url}}/extend#extensions)
+* [Gadgets]({{site.url}}/extend#gadgets)
+* [Other additions]({{site.url}}/extend#other-additions)
 
 Wikibase is a powerful and extensible piece of software, and a large amount of what it can do lies beyond the fairly stripped-down state Wikibase is in when you run your Docker images for the first time. 
 

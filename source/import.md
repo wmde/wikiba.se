@@ -6,6 +6,11 @@ nav_name: import
 ---
 ## Importing data into Wikibase
 
+* [QuickStatements]({{site.url}}/import#quickstatements)
+* [WikibaseImport]({{site.url}}/import#wikibaseimport)
+* [WikibaseIntegrator]({{site.url}}/import#wikibaseintegrator)
+* [OpenRefine]({{site.url}}/import#openrefine)
+
 Perhaps the greatest challenge of a clean, empty database is that of properly filling it up with what you want to put in it.  Wikibase is no exception; this section covers the most common and useful tools for getting data into Wikibase.
 
 ### [QuickStatements](https://www.wikidata.org/wiki/Help:QuickStatements)

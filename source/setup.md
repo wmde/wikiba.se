@@ -22,7 +22,7 @@ Wikibase is all about the data. Understand your options for data import.
 
 ### [Federating](fed)
 
-Here's a thorough explanation of the various kinds of federation available for Wikibase.
+Here's an explanation of the various kinds of federation available for Wikibase.
 
 ### Other resources
 
