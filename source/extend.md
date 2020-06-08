@@ -48,7 +48,7 @@ You can browse and download many extensions with the MediaWiki [ExtensionDistrib
 
 To view the extensions you currently have installed, navigate to `<your Wikibase URL>/wiki/Special:Version#mw-version-ext`.
 
-Note that the following list doesn't include extensions meant for importing data into Wikibase, several options for which are covered in some detail over at [Importing data](#Import).
+Note that the following list doesn't include extensions meant for importing data into Wikibase, several options for which are covered in some detail over at [Importing data]({{site.url}}/import).
 
 #### General utility
 
