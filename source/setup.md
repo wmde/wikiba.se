@@ -8,19 +8,19 @@ nav_name: setup
 
 Here you are, fresh from [installing Wikibase on Docker](install). What do you do now?
 
-### [Care and feeding](caf)
+### [Care and feeding]({{site.url}}/caf)
 
 Your Wikibase installation is a living thing. Learn how to keep it alive and healthy.
 
-### [Extending](extend)
+### [Extending]({{site.url}}/extend)
 
 Find out what Wikibase admins often change, add and tweak after installing.
 
-### [Importing](import)
+### [Importing]({{site.url}}/import)
 
 Wikibase is all about the data. Understand your options for data import.
 
-### [Federating](fed)
+### [Federating]({{site.url}}/fed)
 
 Here's an explanation of the various kinds of federation available for Wikibase.
 
