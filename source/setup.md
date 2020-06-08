@@ -6,7 +6,7 @@ nav_name: setup
 ---
 ## Setup
 
-Here you are, fresh from [installing Wikibase on Docker](install). What do you do now?
+Here you are, fresh from [installing Wikibase on Docker]({{site.url}}/install). What do you do now?
 
 ### [Care and feeding]({{site.url}}/caf)
 
