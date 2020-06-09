@@ -35,7 +35,7 @@ You can also check out this helpful third-party overview of templates: [ryadel.c
 
 #### Lua 
 
-Templates can call modules written in the [Lua](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua) scripting language, making them more powerful. Check out the [tutorial](https://www.mediawiki.org/wiki/Lua/Tutorial) and see the [scripting language section](#Scripting) below.
+Templates can call modules written in the [Lua](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua) scripting language, making them more powerful. Check out the [tutorial](https://www.mediawiki.org/wiki/Lua/Tutorial) and see the [scripting language section](#scripting) below.
 
 
 ### Extensions
