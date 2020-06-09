@@ -19,7 +19,7 @@ On this page you can take a quick, link-heavy tour of the resources available to
 
 ### Templates
 
-[MediaWiki templates](https://www.mediawiki.org/wiki/Help:Templates) work a bit like text macros in that they contain content meant to be [transcluded](https://www.mediawiki.org/wiki/Transclusion) into other wiki pages. But their functionality can extend far beyond simple text replacement when scripting comes into play (see [Lua]({{site.url}}/extend#Lua) below).
+[MediaWiki templates](https://www.mediawiki.org/wiki/Help:Templates) work a bit like text macros in that they contain content meant to be [transcluded](https://www.mediawiki.org/wiki/Transclusion) into other wiki pages. But their functionality can extend far beyond simple text replacement when scripting comes into play (see [Lua]({{site.url}}/extend#lua) below).
 
 To view the templates installed on your (or any) instance, navigate to `<your Wikibase URL>/wiki/Special:AllPages?from=&to=&namespace=10`.
 
@@ -86,7 +86,7 @@ See also the [constraints portal](https://www.wikidata.org/wiki/Help:Property_co
 
 #### Last but not least
 
-The [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets) extension enables the use of gadgets (see below). You may well find that this extension is already installed on your instance, but [make sure](#Extensions): it needs to be installed and enabled before implementing anything listed in the next section!
+The [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets) extension enables the use of gadgets (see below). You may well find that this extension is already installed on your instance, but [make sure](#extensions): it needs to be installed and enabled before implementing anything listed in the next section!
 
 ### Gadgets
 
