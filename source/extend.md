@@ -57,7 +57,7 @@ Note that the following list doesn't include extensions meant for importing data
 
 #### Scripting
 
-* [Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto): enables the embedding of scripting languages into MediaWiki, currently only [Lua](https://www.mediawiki.org/wiki/Lua_scripting). This enables, among other powerful applications for scripting, the use of Lua modules in templates ([see above](#Lua)).
+* [Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto): enables the embedding of scripting languages into MediaWiki, currently only [Lua](https://www.mediawiki.org/wiki/Lua_scripting). This enables, among other powerful applications for scripting, the use of Lua modules in templates ([see above](#lua)).
  * [Lua tutorial for MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual)
  * [Differences from standard Lua](https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual#Differences_from_standard_Lua)
 
