@@ -75,7 +75,7 @@ And here's an architecture table with a diagram (click to enlarge):
 
 <td>
 
-<a href="{{site.url}}images/wikibase-diagram.png"><img src="images/wikibase-diagram-s.png" border=0></a>
+<a href="{{site.url}}/images/wikibase-diagram.png"><img src="../images/wikibase-diagram-s.png" border=0></a>
 
 </td>
 </tbody>
