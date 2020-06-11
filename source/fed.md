@@ -6,7 +6,9 @@ nav_name: fed
 ---
 ## Federation 
 
-There's a lot of excitement around the concept of federation in Wikibase, but "federation" means different things to different people. Below we lay out the different meanings of the term and show you what's currently available.
+There's a lot of excitement around the concept of federation in Wikibase. Generally speaking, federation means sharing information between Wikibase instances in order to broaden the base of available data.
+
+However, federation takes many forms, and misconceptions or presumptions about the term can lead to confusion. Below we lay out different kinds of federation and explain what's currently available.
 
 ### Federated querying
 

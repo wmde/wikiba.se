@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Care and feeding
-nav_name: caf
+title: Maintenance
+nav_name: maint
 
 ---
-## Care and feeding of a Wikibase instance
+## Maintaining a Wikibase instance
 
-* [Architecture overview]({{site.url}}/caf#architecture-overview)
-* [Docker tooling]({{site.url}}/caf#docker-tooling)
- * [Logs]({{site.url}}/caf#logs)
-* [Backup and restore]({{site.url}}/caf#backup-and-restore)
-* [Wiki tools]({{site.url}}/caf#wiki-tools)
-* [Updating]({{site.url}}/caf#updating)
+* [Architecture overview]({{site.url}}/maint#architecture-overview)
+* [Docker tooling]({{site.url}}/maint#docker-tooling)
+ * [Logs]({{site.url}}/maint#logs)
+* [Backup and restore]({{site.url}}/maint#backup-and-restore)
+* [Wiki tools]({{site.url}}/maint#wiki-tools)
+* [Updating]({{site.url}}/maint#updating)
 
 Here are some resources to give you some insight into your Wikibase instance and to help keep it healthy and up to date.
 
@@ -149,7 +149,7 @@ mysql_1 | 2019-12-31 10:00:00+00:00 [Note] [Entrypoint]: Switching to dedicated 
 
 The data in your Wikibase instance is valuable. Regular backups and tested restores of data are vital.
 
-Genersally, there are two bodies of data you'll need to back up: the MediaWiki/Wikibase filesystem and, more importantly, the MySQL database.
+Generally, there are two bodies of data you'll need to back up: the MediaWiki/Wikibase filesystem and, more importantly, the MySQL database.
 
 First and foremost, we recommend reading the [Wikibase Docker README](https://github.com/wmde/wikibase-docker/blob/master/README-compose.md) to get the lay of the land.
 
@@ -165,7 +165,7 @@ For a helpful overview of Docker data backup and restore, including the use of t
 
 Backup on the container level is not an easy proposition; we cover it here mainly to present a more complete picture of MediaWiki and Wikibase under the hood.
 
-To that end, read the documentation on [backing up a MediaWiki](https://www.mediawiki.org/wiki/Manual:Backing_up_a_wiki), bearing in mind that the work needs to be done from within the containers (cf. [Docker tooling]({{site.url}}/caf#docker-tooling) above) and the data extracted and placed somewhere safe outside of Docker.
+To that end, read the documentation on [backing up a MediaWiki](https://www.mediawiki.org/wiki/Manual:Backing_up_a_wiki), bearing in mind that the work needs to be done from within the containers (cf. [Docker tooling]({{site.url}}/maint#docker-tooling) above) and the data extracted and placed somewhere safe outside of Docker.
 
 
 ### Wiki tools

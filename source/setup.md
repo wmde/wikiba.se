@@ -8,7 +8,7 @@ nav_name: setup
 
 Here you are, fresh from [installing Wikibase on Docker]({{site.url}}/install). What do you do now?
 
-### [Care and feeding]({{site.url}}/caf)
+### [Maintaining]({{site.url}}/maint)
 
 Your Wikibase installation is a living thing. Learn how to keep it alive and healthy.
 
@@ -22,12 +22,12 @@ Wikibase is all about the data. Understand your options for data import.
 
 ### [Federating]({{site.url}}/fed)
 
-Here's an explanation of the various kinds of federation available for Wikibase.
+Here's an explanation of the concept of federation and the various forms of federation available for Wikibase.
 
 ### Other resources
 
 * [Learning Wikibase](http://learningwikibase.com/)
 * [Wikibase Query Service Tutorial](http://wikidata.wwwnlsrc4.supercp.com/)
-* [Working with MediaWiki](https://workingwithmediawiki.com/book/)
+* [Working with MediaWiki](https://workingwithmediawiki.com)
 
 
