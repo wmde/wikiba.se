@@ -38,23 +38,7 @@
             </li>
 		</nav>
 	</div>
-	{% if page.nav_name == 'home' %}
-		<div class="jumbotron banner">
-			<div class="container">
-				<picture class="logo">	
-					<img src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
-				</picture>
-				<div class="banner-text">
-					Welcome to the <strong>Wikibase</strong> project!
-					<p class="sub">
-					Wikibase is an open-source software suite for creating collaborative knowledge bases,<br />opening the door to the Linked Open Data web. 
-					</p>
-				</div>
-			</div>
-		</div>
-	{% else %}
 		<hr class="nav-divide">
-	{% endif %}
 	<div class="container">
 		{% block content %}{% endblock %}
 	</div>

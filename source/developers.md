@@ -15,8 +15,7 @@ nav_name: developers
 - [Data model primer](https://www.mediawiki.org/wiki/Wikibase/DataModel/Primer)
 - Wikibase's [libraries]({{site.url}}/libraries)
 - [Docker images](https://hub.docker.com/r/wikibase/)
-- [Wikibase repository](https://www.mediawiki.org/wiki/Extension:Wikibase_Repository) ([source](https://phabricator.wikimedia.org/diffusion/EWBA/))
-- [Wikibase client](https://www.mediawiki.org/wiki/Extension:Wikibase_Client) ([source](https://phabricator.wikimedia.org/diffusion/EWBA/))
+- [Wikibase repository](https://www.mediawiki.org/wiki/Extension:Wikibase_Repository) ([source](https://gerrit.wikimedia.org/g/mediawiki/extensions/Wikibase))
 
 ### Miscellaneous
 

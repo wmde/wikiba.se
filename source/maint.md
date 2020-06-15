@@ -13,7 +13,10 @@ nav_name: maint
 * [Wiki tools]({{site.url}}/maint#wiki-tools)
 * [Updating]({{site.url}}/maint#updating)
 
+
 Here are some resources to give you some insight into your Wikibase instance and to help keep it healthy and up to date.
+
+(next: [Extending]({{site.url}}/extend))
 
 ### Architecture overview
 
@@ -87,7 +90,7 @@ And here's an architecture table with a diagram (click to enlarge):
 
 ### Docker tooling
 
-The best tool for managing your Docker install is the one you used to get it going in the first place: **docker-compose**. This manual can't possibly replace a grounding in Docker so check out Docker's own command references for [docker-compose](https://docs.docker.com/compose/reference/) and the [docker engine](https://docs.docker.com/engine/reference/commandline/docker/).
+The best tool for managing your Docker install is the one you used to get it going in the first place: **docker-compose**. This manual can't possibly replace a grounding in Docker, so check out Docker's own command references for [docker-compose](https://docs.docker.com/compose/reference/) and the [docker engine](https://docs.docker.com/engine/reference/commandline/docker/).
 
 That said, here are some starter commands that might come in handy.
 
@@ -137,9 +140,9 @@ This command removes the containers but preserves all data in MySQL, MediaWiki a
 
 Each application in the Wikibase cluster has its own log output. Consult each service's own documentation to learn how to read its logs.
 
-In the directory where you placed your `docker-compose.yml` file, run the `docker-compose` command and the name of the service (cf. table above) to see its logs. For example:
+In the directory where you placed your `docker-compose.yml` file, run the `docker-compose logs` command and the name of the service (check the table above) to see its logs. For example:
 ```
-user@host:~/docker$ docker-compose logs mysql
+user@host:~/docker$ docker-compose logs mysql --tail 100
 mysql_1 | 2019-12-31 10:00:00+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server started.
 mysql_1 | 2019-12-31 10:00:00+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
 ...
@@ -183,4 +186,6 @@ Keeping software up to date is the only way to obtain new features, not to menti
 
 Updating Wikibase on Docker involves upgrading MediaWiki itself (see the [MediaWiki update documentation](https://www.mediawiki.org/wiki/Manual:Update.php)) as well as tweaking the [docker-compose.yml](https://github.com/wmde/wikibase-docker/blob/master/docker-compose.yml) file itself.
 
-For this manual and precarious process, Adam Shorland's seminal [blog post](https://addshore.com/2019/01/wikibase-docker-mediawiki-wikibase-update/) on the topic is a must-read.
+We recommend reading Adam Shorland's [blog post](https://addshore.com/2019/01/wikibase-docker-mediawiki-wikibase-update/) for a step-by-step guide to updating your Wikibase.
+
+(next: [Extending]({{site.url}}/extend))

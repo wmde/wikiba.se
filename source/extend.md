@@ -23,7 +23,7 @@ On this page you can take a quick, link-heavy tour of the resources available to
 
 To view the templates installed on your (or any) instance, navigate to `<your Wikibase URL>/wiki/Special:AllPages?from=&to=&namespace=10`.
 
-While there is no single repository for MediaWiki templates, Wikipedia does offer a robust [template resource page](https://en.wikipedia.org/wiki/Wikipedia:Template_index), and they are easily turned up in web searches and by looking through what's installed on any given instance of MediaWiki. When you find a template you want to use, follow [these instructions](https://www.mediawiki.org/wiki/Help:Templates#Copying_from_one_wiki_to_another) to start using it on your instance.
+While there is no single repository for MediaWiki templates, Wikipedia does offer a robust [template resource page](https://en.wikipedia.org/wiki/Wikipedia:Template_index). You can find them easily by searching the web or by looking through what's installed on any given instance of MediaWiki. When you find a template you want to use, follow [these instructions](https://www.mediawiki.org/wiki/Help:Templates#Copying_from_one_wiki_to_another) to start using it on your instance.
 
 A few templates that Wikibase users often find useful:
 
@@ -40,11 +40,9 @@ Templates can call modules written in the [Lua](https://www.mediawiki.org/wiki/E
 
 ### Extensions
 
-The wide variety of [extensions](https://www.mediawiki.org/wiki/Manual:Extensions) that modify how your installation looks and works actually includes Wikibase itself, but there are many others that Wikibase users often install depending on their instance's needs.
+MediaWiki's robust software ecosystem offers a wide range of [extensions](https://www.mediawiki.org/wiki/Manual:Extensions), pieces of code that modify how your installation looks and works. Extensions come in many shapes and sizes, from simple and useful tweaks to large modifications in functionality; as you probably know, Wikibase is itself an extension to MediaWiki. 
 
-You can browse and download many extensions with the MediaWiki [ExtensionDistributor](https://www.mediawiki.org/wiki/Special:ExtensionDistributor).
-
-[These install instructions](https://www.mediawiki.org/wiki/Manual:Extensions#Installing_an_extension) should cover most cases, but some extensions have special instructions called out separately below.
+You can browse and download many of these extensions with the MediaWiki [ExtensionDistributor](https://www.mediawiki.org/wiki/Special:ExtensionDistributor). [These install instructions](https://www.mediawiki.org/wiki/Manual:Extensions#Installing_an_extension) should cover most cases, but some extensions have special instructions called out separately below.
 
 To view the extensions you currently have installed, navigate to `<your Wikibase URL>/wiki/Special:Version#mw-version-ext`.
 
@@ -59,6 +57,7 @@ Note that the following list doesn't include extensions meant for importing data
 
 * [Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto): enables the embedding of scripting languages into MediaWiki, currently only [Lua](https://www.mediawiki.org/wiki/Lua_scripting). This enables, among other powerful applications for scripting, the use of Lua modules in templates ([see above](#lua)).
  * [Lua tutorial for MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual)
+ * [Detailed reference for Lua in MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua)
  * [Differences from standard Lua](https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual#Differences_from_standard_Lua)
 
 #### Content management and spam protection
@@ -71,7 +70,6 @@ Note that the following list doesn't include extensions meant for importing data
 #### Wikibase-specific
 
 * [OAuth](https://www.mediawiki.org/wiki/Extension:OAuth): implements [OAuth](https://oauth.net/), required for some tools to work correctly with Wikibase
- * [Detailed reference for Lua in MW/Scribunto](https://www.mediawiki.org/wiki/Extension:Wikibase_Client/Lua)
 * [CLDR](https://www.mediawiki.org/wiki/Extension:CLDR): contains and manages locale-specific information regarding the display of data in different languages and formats
 * [Universal Language Selector](https://www.mediawiki.org/wiki/Extension:UniversalLanguageSelector): allows users to configure an interface language of their choice
 * [Property Suggester](https://www.mediawiki.org/wiki/Extension:PropertySuggester): adds useful auto-suggestion of properties for manual edits
@@ -90,7 +88,7 @@ The [Gadgets](https://www.mediawiki.org/wiki/Extension:Gadgets) extension enable
 
 ### Gadgets
 
-Gadgets are small, optional-per-user interface modifications. Some examples can be found in the [MediaWiki gadget list](https://www.mediawiki.org/wiki/Extension:Gadgets#List_of_gadget_scripts) and [Wikidata's installed gadgets](https://www.wikidata.org/wiki/Special:Gadgets)
+Gadgets are small interface modifications that each user of an instance can choose to activate or deactivate for their own use. Some examples can be found in the [MediaWiki gadget list](https://www.mediawiki.org/wiki/Extension:Gadgets#List_of_gadget_scripts) and [Wikidata's installed gadgets](https://www.wikidata.org/wiki/Special:Gadgets)
 
 Here's a guide to [writing your own](https://www.mediawiki.org/wiki/Gadget_kitchen), and here's how to [install a gadget](https://www.mediawiki.org/wiki/Extension:Gadgets#Installation).
 
@@ -114,7 +112,7 @@ To get sitelinks working, first work through the [sitelinks section of the insta
 
 #### Sorted properties/statements
 
-Wikibase's content displays in the order in which it was added to the database. To change the default order, you'll need to use a sorted properties list.
+By default, Wikibase displays content from queries and on entity/item pages in the order in which each item was added to the database. To make a change in the display order, you'll need to use a sorted properties list.
 
 Learn more about it on the [Sorted Properties](https://www.mediawiki.org/wiki/Manual:Interface/Wikibase-SortedProperties) page, and check out [Wikidata's own Sorted Properties](https://www.wikidata.org/w/index.php?title=MediaWiki:Wikibase-SortedProperties) for inspiration.
 
