@@ -92,25 +92,27 @@ And here's an architecture table with a diagram (click to enlarge):
 
 The best tool for managing your Docker install is the one you used to get it going in the first place: **docker-compose**. This manual can't possibly replace a grounding in Docker, so check out Docker's own command references for [docker-compose](https://docs.docker.com/compose/reference/) and the [docker engine](https://docs.docker.com/engine/reference/commandline/docker/).
 
-That said, here are some starter commands that might come in handy.
+That said, here are some starter commands that might come in handy. 
 
-#### Get a command shell on an instance
+**Note**: Container names created using `docker-compose` begin with the basename of the directory in which they were created with the first `docker-compose up` invocation, separated by an underscore. The example container names below begin with `wbdocker_` because, for example purposes, we created them with the `docker-compose.yml` file sitting in a directory named `wbdocker`.
 
-You won't need it for typical Wikibase activity, but for Docker beginners here's one very useful command that connects to a running instance:
+#### Get a command shell on a container
+
+You won't need it for typical Wikibase activity, but for Docker beginners here's one very useful command that connects to a running container:
 
 ```
-docker exec -it <instance name> bash
+docker exec -it <container name> bash
 ```
 
 #### Copy a file to your local directory 
 ```
-docker cp docker_wikibase_1:/var/www/html/LocalSettings.php LocalSettings.php
+docker cp wbdocker_wikibase_1:/var/www/html/LocalSettings.php LocalSettings.php
 ```
 
 This also works in the other direction, and the combination is useful for, say, grabbing your LocalSettings.php, editing it and putting it right back.
 
 ```
-docker cp LocalSettings.php docker_wikibase_1:/var/www/html/LocalSettings.php 
+docker cp LocalSettings.php wbdocker_wikibase_1:/var/www/html/LocalSettings.php 
 ```
 
 Read [Adam Shorland's excellent blog post](https://addshore.com/2018/06/customizing-wikibase-config-in-the-docker-compose-example/) for more detail on modifying files on containers.
