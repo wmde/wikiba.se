@@ -22,7 +22,7 @@ Libraries frequently find Wikibase well suited to their requirements: it provide
 Wikibase offers the greenfield conditions often needed by collections with large bodies of custom data in order to create an accurate representation of the unique information in their hands.
 
 - [Rhizome](https://rhizome.org/about/), a collection of born-digital art ([blog entry](https://wikimediafoundation.org/news/2018/09/06/rhizome-wikibase/))
-- [Linked Jazz](https://linkedjazz.org/using-wikibase-for-linked-jazz/), describing the oral history of jazz using linked data
+- [Linked Jazz](https://linkedjazz.org/), describing the oral history of jazz using linked data
 
 ### Research
 

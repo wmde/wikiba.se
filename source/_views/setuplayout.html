@@ -9,21 +9,6 @@
 	<link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/x-icon" href="{{ site.url }}/images/favicon.ico">
 
-	<!-- Matomo -->
-	<script type="text/javascript">
-		var _paq = window._paq || [];
-		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-		_paq.push(['trackPageView']);
-		_paq.push(['enableLinkTracking']);
-		(function() {
-			var u="//{{ site.matomo_host }}/";
-			_paq.push(['setTrackerUrl', u+'matomo.php']);
-			_paq.push(['setSiteId', '{{ site.matomo_site_id }}']);
-			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-		})();
-	</script>
-	<!-- End Matomo Code -->
 </head>
 <body>
 	<div class="container">
@@ -53,23 +38,7 @@
             </li>
 		</nav>
 	</div>
-	{% if page.nav_name == 'home' %}
-		<div class="jumbotron banner">
-			<div class="container">
-				<picture class="logo">	
-					<img src="{{ site.url }}/images/logo.png" alt="WIKIBASE">
-				</picture>
-				<div class="banner-text">
-					Welcome to the <strong>Wikibase</strong> project!
-					<p class="sub">
-					Wikibase is an open-source software suite for creating collaborative knowledge bases,<br />opening the door to the Linked Open Data web. 
-					</p>
-				</div>
-			</div>
-		</div>
-	{% else %}
 		<hr class="nav-divide">
-	{% endif %}
 	<div class="container">
 		{% block content %}{% endblock %}
 	</div>
