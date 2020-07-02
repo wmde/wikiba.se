@@ -26,7 +26,6 @@ Here's an explanation of the concept of federation and the various forms of fede
 
 ### Other resources
 
-* [Learning Wikibase](http://learningwikibase.com/)
 * [Wikibase Query Service Tutorial](https://wdqs-wmil-tutorial.toolforge.org/)
 * [Working with MediaWiki](https://workingwithmediawiki.com)
 
