@@ -6,7 +6,7 @@ nav_name: impressum
 ---
 # Impressum
 
-Dieses Impressum gilt für die Domains wikiba.se. 
+Dieses Impressum gilt für die Domain wikiba.se. 
 
 ## Diensteanbieter
 **Wikimedia Deutschland  
