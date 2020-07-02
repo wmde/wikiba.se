@@ -24,7 +24,7 @@ Umsatzsteuer-ID: DE263757776
 Inhaltlich Verantwortlicher gemäß § 55 Abs. 2  
 RStV: Abraham Taherivand (Anschrift wie oben).
 
-Illustration Startseite: Wikimedia Deutschland e. V., WMDE Illustration, CC BY-SA 4.0
+Illustration Startseite: Henning Snater für Wikimedia Deutschland e. V. ([GPLv2[(https://github.com/wmde/Wikiba.se/blob/master/COPYING))
 
 ## Büro
 
