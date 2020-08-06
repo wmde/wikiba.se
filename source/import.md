@@ -19,11 +19,11 @@ QuickStatements is the useful import tool you'll find already running in your Do
 
 The essential help document linked above is packed with useful information far too intricate to be summarized here, but it's worth noting that [OpenRefine](https://www.wikidata.org/wiki/Wikidata:Tools/OpenRefine) data ([see below]({{site.url}}/import#OpenRefine)) can be exported to QuickStatements format.
 
-### [WikibaseImport](https://github.com/filbertkm/WikibaseImport)
+### [WikibaseImport](https://github.com/Wikidata/WikibaseImport)
 
 WikibaseImport is a MediaWiki [extension]({{site.url}}/extend#Extensions) and a flexible, powerful command-line tool that allows you to import into Wikibase using exports of data from other Wikibase instances. It's best for experienced Wikibase users who have a firm grasp of Wikibase's [data architecture](https://www.mediawiki.org/wiki/Wikibase/DataModel) and are comfortable using command-line tools on their instance's web server. (See the [maintenance section]({{site.url}}/maint) for more information on working directly with a container)
 
-To install WikibaseImport, follow its [install instructions](https://github.com/filbertkm/WikibaseImport#install). You can also find more information on working with extensions on our [Extending Wikibase]({{site.url}}/extend) page.
+To install WikibaseImport, follow its [install instructions](https://github.com/Wikidata/WikibaseImport#install). You can also find more information on working with extensions on our [Extending Wikibase]({{site.url}}/extend) page.
 
 ### [WikibaseIntegrator](https://github.com/Mystou/WikibaseIntegrator)
 
