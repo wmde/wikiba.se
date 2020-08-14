@@ -144,7 +144,7 @@ Each application in the Wikibase cluster has its own log output. Consult each se
 
 In the directory where you placed your `docker-compose.yml` file, run the `docker-compose logs` command and the name of the service (check the table above) to see its logs. For example:
 ```
-user@host:~/docker$ docker-compose logs mysql --tail 100
+user@host:~/docker$ docker-compose logs  -f --tail=100 mysql
 mysql_1 | 2019-12-31 10:00:00+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server started.
 mysql_1 | 2019-12-31 10:00:00+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
 ...
