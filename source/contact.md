@@ -10,5 +10,4 @@ The best place to get in touch with Wikibase users & developers is the Wikibase 
 
 - [Telegram group](https://t.me/joinchat/HGjGexZ9NE7BwpXzMsoDLA)
 - [Mailing list](https://lists.wikimedia.org/mailman/listinfo/wikibaseug)
-- [Contact the development team](https://www.wikidata.org/wiki/Wikidata:Contact_the_development_team)
 
