@@ -43,7 +43,7 @@ And here's an architecture table with a diagram (click to enlarge):
 </tr>
 <tr>
 <td><b>mysql</b></td>
-<td>docker port 3006</td>
+<td>docker port 3306</td>
 <td>the MySQL (MariaDB) database</td>
 </tr>
 <tr>
