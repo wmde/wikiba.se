@@ -28,6 +28,10 @@ Before you do, you may want to review the [bug report guidelines](https://www.me
 ### Is there a list of Wikibase instances?
 There's not a single canonical list&mdash;on our [Showcase]({{site.url}}/showcase) page we highlight several notable instances, but for more comprehensive information you can check out the [voluntary Wikibase registry](http://wikibase-registry.wmflabs.org/wiki/Main_Page) and the list of [federated query endpoints](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual/SPARQL_Federation_endpoints).
 
+### How can I get technical support for my Wikibase instance?
+
+Take a look at the [third-party consultants list](https://meta.wikimedia.org/wiki/Wikibase/Consultants_and_Support_Providers). (This is a public wiki page; inclusion of a given provider doesn't constitute an official endorsement by the Wikibase team.)
+
 ### Where can I find more info about the query service?
 
 Here's Wikidata's [query service manual](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual) and some [SPARQL examples](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/queries/examples).
