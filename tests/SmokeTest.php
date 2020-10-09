@@ -3,18 +3,23 @@
 use PHPUnit\Framework\TestCase;
 
 /**
- * @licence GNU GPL v2+
+ * @license GPL-2.0-or-later
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 class SmokeTest extends TestCase {
-
 	private static $PAGE_PATH;
 
 	public static function setUpBeforeClass() : void {
 		self::$PAGE_PATH = __DIR__ . '/../output_test/';
+		// In this particular case exec is needed to generate the static site output
+		// phpcs:disable MediaWiki.Usage.ForbiddenFunctions.exec
 		exec( 'composer build-test' );
+		// phpcs:enable MediaWiki.Usage.ForbiddenFunctions.exec
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testMainPageContainsIntroText() {
 		$this->assertPageContains(
 			'Wikibase is an open-source software suite for creating',
@@ -22,6 +27,9 @@ class SmokeTest extends TestCase {
 		);
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testLibrariesPageContainsLibraries() {
 		$this->assertPageContains(
 			'Libraries',
@@ -29,6 +37,9 @@ class SmokeTest extends TestCase {
 		);
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testBootstrapCssIsWhereExpected() {
 		$this->assertRelativeFileExists( 'components/bootstrap/dist/css/bootstrap.min.css' );
 	}
