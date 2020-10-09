@@ -28,5 +28,5 @@ Here's an explanation of the concept of federation and the various forms of fede
 
 * [Wikibase Query Service Tutorial](https://wdqs-tutorial.toolforge.org)
 * [Working with MediaWiki](https://workingwithmediawiki.com)
-* [Consultants and Support Providers](https://meta.wikimedia.org/wiki/Wikibase/Consultants_and_Support_Providers)
+* [Wikibase Consultants and Support Providers](https://meta.wikimedia.org/wiki/Wikibase/Consultants_and_Support_Providers)
 
