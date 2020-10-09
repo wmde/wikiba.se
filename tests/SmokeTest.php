@@ -7,8 +7,6 @@ use PHPUnit\Framework\TestCase;
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 class SmokeTest extends TestCase {
-	// Ignoring CS Warnings for the @covers rule as this file does not cover any php classes
-	// phpcs:disable MediaWiki.Commenting.MissingCovers.MissingCovers
 	private static $PAGE_PATH;
 
 	public static function setUpBeforeClass() : void {
@@ -19,6 +17,9 @@ class SmokeTest extends TestCase {
 		// phpcs:enable MediaWiki.Usage.ForbiddenFunctions.exec
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testMainPageContainsIntroText() {
 		$this->assertPageContains(
 			'Wikibase is an open-source software suite for creating',
@@ -26,6 +27,9 @@ class SmokeTest extends TestCase {
 		);
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testLibrariesPageContainsLibraries() {
 		$this->assertPageContains(
 			'Libraries',
@@ -33,6 +37,9 @@ class SmokeTest extends TestCase {
 		);
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testBootstrapCssIsWhereExpected() {
 		$this->assertRelativeFileExists( 'components/bootstrap/dist/css/bootstrap.min.css' );
 	}
