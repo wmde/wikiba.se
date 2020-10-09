@@ -7,12 +7,16 @@ use PHPUnit\Framework\TestCase;
  * @author Jeroen De Dauw < jeroendedauw@gmail.com >
  */
 class SmokeTest extends TestCase {
-
+	// Ignoring CS Warnings for the @covers rule as this file does not cover any php classes
+	// phpcs:disable MediaWiki.Commenting.MissingCovers.MissingCovers
 	private static $PAGE_PATH;
 
 	public static function setUpBeforeClass() : void {
 		self::$PAGE_PATH = __DIR__ . '/../output_test/';
+		// In this particular case exec is needed to generate the static site output
+		// phpcs:disable MediaWiki.Usage.ForbiddenFunctions.exec
 		exec( 'composer build-test' );
+		// phpcs:enable MediaWiki.Usage.ForbiddenFunctions.exec
 	}
 
 	public function testMainPageContainsIntroText() {
