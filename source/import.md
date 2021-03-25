@@ -10,6 +10,7 @@ nav_name: import
 * [WikibaseImport]({{site.url}}/import#wikibaseimport)
 * [WikibaseIntegrator]({{site.url}}/import#wikibaseintegrator)
 * [OpenRefine]({{site.url}}/import#openrefine)
+* [RaiseWikibase]({{site.url}}/import#raisewikibase)
 
 Perhaps the greatest challenge of a clean, empty database is that of properly filling it up with what you want to put in it.  Wikibase is no exception; this section covers the most common and useful tools for getting data into Wikibase.
 
@@ -36,3 +37,9 @@ Read [here](https://www.wikidata.org/wiki/User:ProteinBoxBot) how the developers
 Originally developed by Google, OpenRefine is now a community-supported data management tool that can handle large bodies of data and wrangle them into a format suitable for importing into Wikidata.
 
 While OpenRefine support for Wikibase users is not yet available, progress on this feature is likely coming in the future. For more information, see this [discussion on adding support for Wikimedia Commons](https://github.com/OpenRefine/OpenRefine/issues/2144).
+
+### [RaiseWikibase](https://github.com/UB-Mannheim/RaiseWikibase)
+
+RaiseWikibase is a Python tool for fast inserts into a Wikibase instance. It uploads up to a million entities and wikitexts per hour, fills data directly into the MariaDB database and can create a bot account for the wrappers of the Wikibase API.
+
+The main use case is uploading millions of pages into a fresh Wikibase instance. Read [how to use](https://github.com/UB-Mannheim/RaiseWikibase#how-to-use) it.
